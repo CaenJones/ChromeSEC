@@ -1,2 +1,2 @@
-# ChromeOS-End-User-Control-Guide
-A step by step guide for administators to implement solid user controls on ChromeOS.
+# ChromeOS End User Control Guide
+One sec... Lemmie write this thing :P
