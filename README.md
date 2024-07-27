@@ -5,6 +5,15 @@ Welcome! this project serves as a tool for system administrators to implement sa
 
 This is an open-source project so if you have an addition, feel free to submit a pull request on the GitHub project. 
 
+# TBD
+## Controling Devtools
+## Managing Chrome Internal URLs
+## Setting Up Logins and Enrollment 
+## Locking Down Virtual Machines
+## Extension Management
+## Disabling OS Features 
+## Other Controls 
+
 # Securing Kiosk Applications
 Kiosk apps are often used for testing, payment, and help desks. This makes it extremely important to protect and manage them to prevent tampering or escape into the operating system. Here, we will discuss browser sandboxing and ways to prevent access to outside applications. 
 
@@ -28,11 +37,3 @@ First, you should disable users ability to access wifi settings in **Devices > C
 
 Now in **Wifi Settings > Platform Access**, choose **Do not allow for both Chrome users and Chrome devices to use other networks**. Then enable **Automatically Connect** to force devices to only connect to your network when they are in range.
 
-#TBD
-## Controling Devtools
-## Managing Chrome Internal URLs
-## Setting Up Logins and Enrollment 
-## Locking Down Virtual Machines
-## Extension Management
-## Disabling OS Features 
-## Other Controls 
