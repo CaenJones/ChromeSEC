@@ -27,3 +27,12 @@ To bypass Chrome and kiosk policy, users can disable wifi and put the system int
 First, you should disable users ability to access wifi settings in **Devices > Chrome > Settings > Users & browsers > User Experience > and Disabled system features**. Then just select **OS Settings**, or **Wifi Settings** to disable access. 
 
 Now in **Wifi Settings > Platform Access**, choose **Do not allow for both Chrome users and Chrome devices to use other networks**. Then enable **Automatically Connect** to force devices to only connect to your network when they are in range.
+
+#TBD
+## Controling Devtools
+## Managing Chrome Internal URLs
+## Setting Up Logins and Enrollment 
+## Locking Down Virtual Machines
+## Extension Management
+## Disabling OS Features 
+## Other Controls 
