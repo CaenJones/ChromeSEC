@@ -30,9 +30,14 @@ Now in **Wifi Settings > Platform Access**, choose **Do not allow for both Chrom
 
 ### TBD
 Controling Devtools
+<br>
 Managing Chrome Internal URLs
+<br>
 Setting Up Logins and Enrollment 
+<br>
 Locking Down Virtual Machines
+<br>
 Extension Management
+<br>
 Disabling OS Features 
 Other Controls 
