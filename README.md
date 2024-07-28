@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 # Introduction
 Welcome! this project serves as a tool for system administrators to implement safe and privacy respecting controls on their managed systems for end users on chromeOS. We will focus on using tools in the Google Admin panel to implement policies across as many devices as possible.
 
