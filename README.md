@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="style.css">
-
 # Introduction
 Welcome! this project serves as a tool for system administrators to implement safe and privacy respecting controls on their managed systems for end users on chromeOS. We will focus on using tools in the Google Admin panel to implement policies across as many devices as possible.
 
@@ -28,16 +26,26 @@ First, you should disable users ability to access wifi settings in **Devices > C
 
 Now in **Wifi Settings > Platform Access**, choose **Do not allow for both Chrome users and Chrome devices to use other networks**. Then enable **Automatically Connect** to force devices to only connect to your network when they are in range.
 
-### TBD
-Controling Devtools
-<br>
-Managing Chrome Internal URLs
-<br>
-Setting Up Logins and Enrollment 
-<br>
-Locking Down Virtual Machines
-<br>
-Extension Management
-<br>
-Disabling OS Features 
-Other Controls 
+# Controling Dev Features
+Google has included several development tools directly into chromeOS, however they are often used to bypass policies and remove device enrollment. It's important to secure and manage access to these programs.
+
+## Limiting Crosh & Terminal Access 
+
+Chrome terminal and crosh have tools for device management, but admins may want to limit access through the admin console for security purposes.
+
+Admins in the console should go to **Devices > Chrome > Settings > User & browser settings**. You should then see a section called **User experience** and then **Disabled system features**. Choose to add Crosh to disable access. 
+
+Admins should also consider adding ***/html/crosh.html** into the URL blacklist to further limit access. 
+
+## Disabling Chrome Flags
+
+Chrome Flags, a feature built in on ChromeOS, gives users the option to adjust custom settings for their applications and devices. While this can be helpful in a non enterprise environment, it's important to properly manage flags to prevent end users from disabling extensions or removing device policies.
+
+In Google Admin, you can go to **Menu > Devices > Chrome > Settings** and just add **chrome://flags** to the disabled features list. Users will then be unable to access the application. 
+
+## Securing Device Recovery Screens
+
+Although developer mode will not be enabled by default on enterprise devices, the recovery screen can still be accessed using  keyboard shortcuts. Due to an oversight, attempting to enable developer mode on enterprise machines would result in an automatic powerwash, even if this action is prohibited by device policy. This mistake could lead to serious problems and may even result in the device being removed from enterprise enrollment.
+
+While it is not possible to directly disable the recovery menu, admins can enable an option called **Forced Re-enrollment**, making it impossible to tamper with the device after the powerwash. You can enable this by going to **Devices > Chrome > Settings > Device Settings > and Enrollment and access**. Then navigate down to **Forced re-enrollment** and check **Force device to automatically re-enroll after wiping**.
+
