@@ -80,3 +80,30 @@ If your devices run v127 or below, you need to disable **DeveloperToolsAvailabil
 
 Admins with devices running the beta (at this time) v128 should navigate to the same menu section as shown in v127 but should instead choose to disable the **ExtensionDeveloperModeSettings**. 
 
+# Securing Sign Ins
+Ensuring the safety and integrity of an organization's data is crucial. By using Google Admin's comprehensive security measures, organizations can safeguard their information and implement strong user controls.  Most, if not all controls mentioned in this section will appear in **Devices > Chrome > Settings > Devices**. Because of this, only a description of the change and its impact will be mentioned per subsection. 
+
+## Removing Return Instructions 
+
+Oftentimes when an enterprise device is lost or stolen, admins can setup instructions on the login screen to have the device returned. However, this can lead to unauthorized access and disclosure of sensitive information. By disabling return instructions, admins can effectively brick a device until either returned or recovered. 
+
+Admins should choose to **disable with login screen** to completely prevent device access until manually unlocked by an authorized user. Along with appropriate wifi and settings controls, it would be near impossible to resell or access the stolen device. 
+
+## Disabling Guest Mode
+
+The guest account on chrome devices lets users access an passwordless, policy-immune account  with limited functionality. This could lead to unauthorized access / use of the device and could even be used to circumvent filtering and security protections put in place on the device. 
+
+To remove access to the guest account, navigate to the pre-clarified menu subsection and just toggle the **Guest mode** option to disabled. 
+
+## Restricting Sign in Access 
+
+To prevent unauthorized entry to enterprise chromebooks, it is important to limit sign-in access to specific users or domains. This not only improves security, but also gives administrators the ability to better control user permissions for different groups.
+
+This functionality can be found in the **User & Browser settings** where admins can add different domains to different device groups **(e.g., `example.com`)**. Optionally, admins can also allow consumer_accounts for limited personal use (group policy will still apply).
+
+## Hiding Personal Information on Login
+
+Some organizations may have several users login to the same device every day, or companies may want to hide the personal information of users if the chromebooks are meant to be taken outside of the building. Either way, admins may want to consider removing profile pictures and information of users on the general chromeOS login screen. 
+
+To set this up, all admins have to do is go to the device settings in the unit you want to change, and go to the sign-in screen section. There, just set the value of **Never show user names and photos** to true. 
+
