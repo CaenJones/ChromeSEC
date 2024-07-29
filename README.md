@@ -72,4 +72,11 @@ Admins have the option to create an optional allow list of extensions users can 
 
 An allow list can be implemented by going to **Devices > Chrome > Apps & Extensions** and then selecting the **Block all apps, admin manages allowlist** option. Then go to the From the Chrome Web Store dropdown, and typing in the ID’s of the extensions you want to allow. 
 
+## Disabling Developer Access
+
+Users can access developer features through the chrome extensions menu, which could potentially affect security and web filtering. Because of this, administrators may want to disable these features from Google Admin.
+
+If your devices run v127 or below, you need to disable **DeveloperToolsAvailability** by going to **Devices > Chrome > Settings > User experience > Developer tools** and clicking the disable dropdown.
+
+Admins with devices running the beta (at this time) v128 should navigate to the same menu section as shown in v127 but should instead choose to disable the **ExtensionDeveloperModeSettings**. 
 
