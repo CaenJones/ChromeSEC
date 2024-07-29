@@ -51,3 +51,25 @@ Although developer mode will not be enabled by default on enterprise devices, th
 
 While it is not possible to directly disable the recovery menu, admins can enable an option called **Forced Re-enrollment**, making it impossible to tamper with the device after the powerwash. You can enable this by going to **Devices > Chrome > Settings > Device Settings > and Enrollment and access**. Then navigate down to **Forced re-enrollment** and check **Force device to automatically re-enroll after wiping**.
 
+# Setting Up Managed Extensions
+Chrome extensions offer a wide range of functions like drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage to prevent these risks.
+
+## Blocking Extension Installation 
+
+Allowing extensions from the Chrome Web Store could pose a security threat and damage workplace integrity, as most offices do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list to limit risks. 
+
+Admins should go to **Devices > Chrome > Apps & extensions** and in the **ExtensionSettings** policy set the mode to blocked to prevent users from installing their own extensions. 
+
+## Automatically Install Extensions 
+
+Many organizations prefer to have filtering and SSO extensions already installed on their machines for convenience and security purposes. This can be accomplished by configuring the admin console to automatically install these extensions and apps.
+
+This functionality is available in  **Devices > Chrome > Apps & extensions** or (depending on your subscription) in **Chrome > Browser > Apps & Extensions**. Next, choose **Users & browsers** for who you want to install the extensions for and input the applications ID. Then just add the force install option for your chosen application. 
+
+## Adding Optional Extension Installations 
+
+Admins have the option to create an optional allow list of extensions users can install. This could be used for programs that are only needed on some systems, but have not been effectively grouped in active directory, or the google admin console.  
+
+An allow list can be implemented by going to **Devices > Chrome > Apps & Extensions** and then selecting the **Block all apps, admin manages allowlist** option. Then go to the From the Chrome Web Store dropdown, and typing in the ID’s of the extensions you want to allow. 
+
+
