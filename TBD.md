@@ -1,4 +1,4 @@
 # Sections to be done:
-- Securing signin and enrollment 
+- Securing Sign ins and enrollment 
 - Locking down internal services
 - Disabing OS features 
