@@ -80,6 +80,12 @@ If your devices run v127 or below, you need to disable **DeveloperToolsAvailabil
 
 Admins with devices running the beta (at this time) v128 should navigate to the same menu section as shown in v127 but should instead choose to disable the **ExtensionDeveloperModeSettings**. 
 
+## Enabling Manifest V2 Extensions
+
+Starting May 31st, 2024, Google will launch extension manifest v3, but most extensions and developers have not updated yet. This may affect tools like 2fa and filtering on current chromeOS devices, so admins should consider enabling the v2 compatibility until developers finish updating.
+
+To enable manifest v2 compatibility before the switch, admins need to navigate to **Devices > Chrome > Settings > Users & browser settings** and select the policy **Manifest V2 extension availability**. Then just toggle **Enable manifest V2 extensions**.
+
 # Securing Sign Ins
 Ensuring the safety and integrity of an organization's data is crucial. By using Google Admin's comprehensive security measures, organizations can safeguard their information and implement strong user controls.  Most, if not all controls mentioned in this section will appear in **Devices > Chrome > Settings > Devices**. Because of this, only a description of the change and its impact will be mentioned per subsection. 
 
