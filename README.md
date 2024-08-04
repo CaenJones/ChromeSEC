@@ -1,29 +1,5 @@
 <link rel="stylesheet" href="style.css">
 
-# Table of Contents 
-- [Introduction](#introduction)
-- [Securing Kiosk Applications](#securing-kiosk-applications)
-  * [Implementing a URL Allowlist](#implementing-a-url-allowlist)
-  * [Managing Accessibility Features](#managing-accessibility-features)
-  * [Forcing Wifi Configurations](#forcing-wifi-configurations)
-- [Controling Dev Features](#controling-dev-features)
-  * [Limiting Crosh & Terminal Access](#limiting-crosh---terminal-access)
-  * [Disabling Chrome Flags](#disabling-chrome-flags)
-  * [Securing Device Recovery Screens](#securing-device-recovery-screens)
-  * [Enabling Verified Mode](#enabling-verified-mode)
-- [Setting Up Managed Extensions](#setting-up-managed-extensions)
-  * [Blocking Extension Installations](#blocking-extension-installations)
-  * [Force Install Extensions](#force-install-extensions)
-  * [Adding Optional Extension Installations](#adding-optional-extension-installations)
-  * [Disabling Developer Access](#disabling-developer-access)
-  * [Enabling Manifest V2 Extensions](#enabling-manifest-v2-extensions)
-- [Securing Sign Ins](#securing-sign-ins)
-  * [Removing Return Instructions](#removing-return-instructions)
-  * [Disabling Guest Mode](#disabling-guest-mode)
-  * [Restricting Sign in Access](#restricting-sign-in-access)
-  * [Hiding Personal Information on Login](#hiding-personal-information-on-login)
-  * [Preventing Multiple Sign ins](#preventing-multiple-sign-ins)
-
 # Introduction
 Welcome! this project serves as a tool for system administrators to implement safe and privacy respecting controls on their managed systems for end users on chromeOS. We will focus on using tools in the Google Admin panel to implement policies across as many devices as possible.
 
@@ -148,4 +124,40 @@ To set this up, all admins have to do is go to the device settings in the unit y
 In order to ensure that all Chrome policies are always enforced for every user, admins may want to block sign-ins for org users. However, they can still allow those users to have dual accounts for services such as Gmail while keeping the same controls.
 
 Admins can navigate to **Devices > Chrome > Settings > Users & browsers** and scroll down to **Multiple Sign-In Access**. There just toggle the option to **Block Multiple Sign in Access to Users in this Organization**.
+
+# Disabling System Features
+ChromeOS provides users with several features designed to improve the experience. However, these features also create gaps in terms of user security and device policies. Because of this, administrators may wish to disable certain features in order to keep device integrity and compliance.
+
+## Managing Certificates 
+Administrators have the option to prohibit user access to managing CA certificates in order to minimize the chances of leaked private keys or incorrect modifications to certs. This can improve overall device security posture and can also help in limiting user involvement. 
+
+This configuration is available in  **Devices > Chrome > Settings > Users & browsers**.  Under **User management of installed CA certificates**, select **Disallow users from managing certificates** and save. 
+
+## Disabling The Task Manager
+In order to ensure the integrity of device extensions  and system stability, admins may want to disable the chrome task manager, or set limits on what extensions / applications can be stopped.  
+
+The option to disable the chrome task manager is one of the first under **Devices > Chrome > Settings > Users & browsers**. Admins should choose the option to **block local users from using the task manager**. 
+
+## Blocking Internal URLs
+
+Google Chrome has several internal addresses that allow access to developer settings and system changes which can compromise device security and get around policies. Because of this, admins may want to disable these features in **Devices > Chrome > Settings > Users & browsers > URL Blocking:**
+```
+chrome://net-export
+chrome://sync-internals
+chrome://network
+chrome://hang
+chrome://restart
+chrome://kill
+javascript://*
+data://*
+chrome://flags
+chrome://system
+chrome://net-internals
+chrome://serviceworker-internals
+```
+## Disabling Incognito Browsing 
+To ensure that extensions consistently run within a user's browser and to have full visibility into their activity, it is recommended that admins disable access to incognito mode. This will allow for complete monitoring of users during the day.
+
+Navigate to **Devices > Chrome > Settings and select User and Browser**. In this section, you can find an option to **disable incognito mode**. Change the value to true and click save to apply the changes.
+
 
