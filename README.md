@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="style.css">
 
+# Table of Contents 
 - [Introduction](#introduction)
 - [Securing Kiosk Applications](#securing-kiosk-applications)
   * [Implementing a URL Allowlist](#implementing-a-url-allowlist)
