@@ -1,5 +1,34 @@
 <link rel="stylesheet" href="style.css">
 
+# Table of Contents 
+- [Introduction](#introduction)
+- [Securing Kiosk Applications](#securing-kiosk-applications)
+   * [Implementing a URL Allowlist](#implementing-a-url-allowlist)
+   * [Managing Accessibility Features](#managing-accessibility-features)
+   * [Forcing Wifi Configurations ](#forcing-wifi-configurations)
+- [Controling Dev Features](#controling-dev-features)
+   * [Limiting Crosh & Terminal Access ](#limiting-crosh-terminal-access)
+   * [Disabling Chrome Flags](#disabling-chrome-flags)
+   * [Securing Device Recovery Screens](#securing-device-recovery-screens)
+   * [Enabling Verified Mode ](#enabling-verified-mode)
+- [Setting Up Managed Extensions](#setting-up-managed-extensions)
+   * [Blocking Extension Installations](#blocking-extension-installations)
+   * [Force Install Extensions ](#force-install-extensions)
+   * [Adding Optional Extension Installations ](#adding-optional-extension-installations)
+   * [Disabling Developer Access](#disabling-developer-access)
+   * [Enabling Manifest V2 Extensions](#enabling-manifest-v2-extensions)
+- [Securing Sign Ins](#securing-sign-ins)
+   * [Removing Return Instructions ](#removing-return-instructions)
+   * [Disabling Guest Mode](#disabling-guest-mode)
+   * [Restricting Sign in Access ](#restricting-sign-in-access)
+   * [Hiding Personal Information on Login](#hiding-personal-information-on-login)
+   * [Preventing Multiple Sign ins](#preventing-multiple-sign-ins)
+- [Disabling System Features](#disabling-system-features)
+   * [Managing Certificates ](#managing-certificates)
+   * [Disabling The Task Manager](#disabling-the-task-manager)
+   * [Blocking Internal URLs](#blocking-internal-urls)
+   * [Disabling Incognito Browsing ](#disabling-incognito-browsing)
+
 # Introduction
 Welcome! this project serves as a tool for system administrators to implement safe and privacy respecting controls on their managed systems for end users on chromeOS. We will focus on using tools in the Google Admin panel to implement policies across as many devices as possible.
 
