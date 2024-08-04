@@ -1,3 +1,3 @@
 # Sections to be done: 
-- Locking down internal services
-- Disabing OS features 
+- Disabing OS features
+- User & Device Reporting 
