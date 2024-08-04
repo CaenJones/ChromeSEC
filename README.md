@@ -119,3 +119,9 @@ Some organizations may have several users login to the same device every day, or
 
 To set this up, all admins have to do is go to the device settings in the unit you want to change, and go to the sign-in screen section. There, just set the value of **Never show user names and photos** to true. 
 
+## Preventing Multiple Sign ins
+
+In order to ensure that all Chrome policies are always enforced for every user, admins may want to block sign-ins for org users. However, they can still allow those users to have dual accounts for services such as Gmail while keeping the same controls.
+
+Admins can navigate to Devices > Chrome > Settings > Users & browsers and scroll down to Multiple Sign-In Access. There just toggle the option to Block Multiple Sign in Access to Users in this Organization 
+
