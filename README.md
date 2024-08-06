@@ -30,9 +30,9 @@
    * [Disabling Incognito Browsing](#disabling-incognito-browsing)
   
 # Introduction
-Welcome! This project serves as a tool for system administrators to implement safe and privacy-respecting controls on their managed systems for end users on ChromeOS. We will focus on using tools in the Google Admin panel to implement policies across as many devices as possible.
+Welcome! This project serves as a tool for system administrators to implement policies across chromeOS devices to improve security and limit user risk. To maximise compatibility, all changes will be centered around the Google admin console. 
 
-This is an open-source project so if you have an addition, feel free to submit a pull request on the GitHub.
+This is an open-source project so if you have an addition, feel free to submit a pull request on GitHub.
 
 # Securing Kiosk Applications
 Kiosk apps are often used for testing, payment, and help desks. This makes it extremely important to protect and manage them to prevent tampering or escape into the operating system. Here, we will discuss browser sandboxing and ways to control access to outside applications.
