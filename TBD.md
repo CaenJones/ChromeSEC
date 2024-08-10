@@ -1,2 +1,3 @@
 # Sections to be done: 
-- User & Device Reporting 
+- Reducing Attack Surfaces
+- User & Device Reporting / Data Management
