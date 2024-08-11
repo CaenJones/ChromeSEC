@@ -28,7 +28,7 @@
    * [Disabling The Task Manager](#disabling-the-task-manager)
    * [Blocking Internal URLs](#blocking-internal-urls)
    * [Disabling Incognito Browsing](#disabling-incognito-browsing)
-   * [Removing Outdated/Unsafe Policies](#Removing-Outdated/Unsafe-Policies)
+   * [Removing Outdated/Unsafe Policies](#removing-outdatedunsafe-policies)
   
 # Introduction
 Welcome! This project serves as a tool for system administrators to implement policies across chromeOS devices to improve security and limit user risk. To maximise compatibility, all changes will be centered around the Google admin console. 
