@@ -28,6 +28,7 @@
    * [Disabling The Task Manager](#disabling-the-task-manager)
    * [Blocking Internal URLs](#blocking-internal-urls)
    * [Disabling Incognito Browsing](#disabling-incognito-browsing)
+   * [Removing Outdated/Unsafe Policies](#Removing-Outdated/Unsafe-Policies)
   
 # Introduction
 Welcome! This project serves as a tool for system administrators to implement policies across chromeOS devices to improve security and limit user risk. To maximise compatibility, all changes will be centered around the Google admin console. 
@@ -167,3 +168,24 @@ Google Chrome has several internal addresses that allow access to developer sett
 To ensure that extensions consistently run within a user’s browser and to have full visibility into their activity, it is recommended that admins disable access to incognito mode. This will allow for complete monitoring of users during the day.
 
 Navigate to **Devices > Chrome > Settings** and select **User and Browser**. In this section, you can find an option to **disable incognito mode**. Change the value to **true** and click save to apply the changes.
+
+## Removing Outdated/Unsafe Policies 
+Many policies on google admin exist to expand device compatibility, however some of these services are for legacy protocols or are just no longer secure.These policies could have been set by different administrators, or just never removed in a timely manor. This can widen your organizations attack surface and causes unnecessary risk. Admins should be sure to check if any GPOs shown below are enabled in chrome://policy:
+
+- EnableDeprecatedWebPlatformFeatures
+- RunAllFlashInAllowMode
+- SuppressUnsupportedOSWarning
+- EnableOnlineRevocationChecks
+- OverrideSecurityRestrictionsOnInsecureOrigin
+- CertificateTransparencyEnforcementDisabledFor
+- Cas
+- CertificateTransparencyEnforcementDisabledFor
+- LegacyCas
+- LegacySameSiteCookieBehaviorEnabled
+- LegacySameSiteCookieBehaviorEnabledForDomainL
+- ist
+- ChromeVariations
+- DnsOverHttpsMode
+- LookalikeWarningAllowlistDomains
+- SafeBrowsingAllowlistDomains
+- RemoteAccessHostAllowRemoteAccessConnections
