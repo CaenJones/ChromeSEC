@@ -29,6 +29,7 @@
    * [Blocking Internal URLs](#blocking-internal-urls)
    * [Disabling Incognito Browsing](#disabling-incognito-browsing)
    * [Removing Outdated/Unsafe Policies](#removing-outdatedunsafe-policies)
+   * [Preventing Device Powerwash](#preventing-device-powerwash)
   
 # Introduction
 Welcome! This project serves as a tool for system administrators to implement policies across chromeOS devices to improve security and limit user risk. To maximise compatibility, all changes will be centered around the Google admin console. 
@@ -189,3 +190,8 @@ Many policies on google admin exist to expand device compatibility, however some
 - LookalikeWarningAllowlistDomains
 - SafeBrowsingAllowlistDomains
 - RemoteAccessHostAllowRemoteAccessConnections
+
+## Preventing Device Powerwash
+The use of powerwashing devices can negatively affect users and admins through data loss, policy and enrollment issues, and application compatibility. Because of this, most organizations choose to disable the option for users to powerwash their devices. 
+
+This setting is available in **Devices > Chrome Devices** and under the **Powerwash** section choose **Do not allow powerwash to be triggered**. This will effectively prevent users from wiping the device except in the case of a TPM firmware update. 
