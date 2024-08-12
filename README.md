@@ -80,7 +80,7 @@ To provide extra protection against developer mode, admins can enable Verified B
 Admins can go to **Devices > Chrome > Settings > Device** in the admin console and select the option for **requiring verified mode boot for Verified Access**.
 
 # Setting Up Managed Extensions
-Chrome extensions offer a wide range of functions like drive integrations, testing tools, and web filtering. However, unauthorized extensions in the website and from 3rd party sources can also pose security risks, and privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage to prevent these risks.
+Chrome extensions offer a wide range of functions like drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, and privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage to prevent these risks.
 
 ## Blocking Extension Installations
 Allowing extensions from the Chrome Web Store could pose a security threat and damage workplace integrity, as most offices do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list to limit risks.
@@ -104,7 +104,7 @@ If your devices run v127 or below, you need to disable **DeveloperToolsAvailabil
 Admins with devices running the beta (at this time) v128 should navigate to the same menu section as shown in v127 but should instead choose to disable **ExtensionDeveloperModeSettings**.
 
 ## Enabling Manifest V2 Extensions
-Starting May 31st, 2024, Google will launch extension manifest v3,  but most extensions and developers have not updated yet. This may affect tools like 2fa and filtering on current chromeOS devices, so admins should consider enabling the v2 compatibility until developers finish updating.
+As of May 31st, 2024, Google has launched extension manifest v3, unfortunately some extensions and developers still have not updated to adapt to this change. This may affect tools like 2fa and filtering on some chromeOS devices. Because of this, admins should enable the v2 compatibility as a precaution until developers finish updates.
 
 To enable Manifest v2 compatibility before the switch, admins need to navigate to **Devices > Chrome > Settings > Users & browser settings** and select **Manifest V2 extension availability** and toggle it to enabled. 
 
