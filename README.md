@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="style.css">\
+<link rel="stylesheet" href="style.css">
 
 > [!CAUTION]
-> DO NOT MODIFY ANYTHING ELSE ON THIS PAGE, UNLESS YOU KNOW WHAT YOU ARE DOING (you probably don't), AS YOU COULD BREAK SOMETHING.
+> Newer versions of the LMEAT exploit can be leveraged on any fully patched chrome device. When used, device policy and managed extensions can be disabled or even removed. To disable it, [admins can follow these instructions](#preventing-lmeat-exploitation).
 
 # Table of Contents
 - [Introduction](#introduction)
