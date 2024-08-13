@@ -152,19 +152,19 @@ The option to disable the Chrome task manager is one of the first under **Device
 
 ## Blocking Internal URLs
 Google Chrome has several internal addresses that allow access to developer settings and system changes which can compromise device security and get around policies. Because of this, admins may want to  disable these features in **Devices > Chrome > Settings > Users & browsers > URL Blocking:**
-
-- chrome://net-export
-- chrome://sync-internals
-- chrome://network
-- chrome://hang
-- chrome://restart
-- chrome://kill
-- javascript://*
-- data://*
-- chrome://system
-- chrome://net-internals
-- chrome://serviceworker-internals
-
+```
+chrome://net-export
+chrome://sync-internals
+chrome://network
+chrome://hang
+chrome://restart
+chrome://kill
+javascript://*
+data://*
+chrome://system
+chrome://net-internals
+chrome://serviceworker-internals
+```
 ## Disabling Incognito Browsing
 To ensure that extensions consistently run within a user’s browser and to have full visibility into their activity, it is recommended that admins disable access to incognito mode. This will allow for complete monitoring of users during the day.
 
@@ -172,25 +172,25 @@ Navigate to **Devices > Chrome > Settings** and select **User and Browser**. In 
 
 ## Removing Outdated/Unsafe Policies 
 Many policies on google admin exist to expand device compatibility, however some of these services are for legacy protocols or are just no longer secure.These policies could have been set by different administrators, or just never removed in a timely manor. This can widen your organizations attack surface and causes unnecessary risk. Admins should be sure to check if any GPOs shown below are enabled in chrome://policy:
-
-- EnableDeprecatedWebPlatformFeatures
-- RunAllFlashInAllowMode
-- SuppressUnsupportedOSWarning
-- EnableOnlineRevocationChecks
-- OverrideSecurityRestrictionsOnInsecureOrigin
-- CertificateTransparencyEnforcementDisabledFor
-- Cas
-- CertificateTransparencyEnforcementDisabledFor
-- LegacyCas
-- LegacySameSiteCookieBehaviorEnabled
-- LegacySameSiteCookieBehaviorEnabledForDomainL
-- ist
-- ChromeVariations
-- DnsOverHttpsMode
-- LookalikeWarningAllowlistDomains
-- SafeBrowsingAllowlistDomains
-- RemoteAccessHostAllowRemoteAccessConnections
-
+```
+EnableDeprecatedWebPlatformFeatures
+RunAllFlashInAllowMode
+SuppressUnsupportedOSWarning
+EnableOnlineRevocationChecks
+OverrideSecurityRestrictionsOnInsecureOrigin
+CertificateTransparencyEnforcementDisabledFor
+-Cas
+CertificateTransparencyEnforcementDisabledFor
+LegacyCas
+LegacySameSiteCookieBehaviorEnabled
+LegacySameSiteCookieBehaviorEnabledForDomainL
+ist
+ChromeVariations
+DnsOverHttpsMode
+LookalikeWarningAllowlistDomains
+SafeBrowsingAllowlistDomains
+RemoteAccessHostAllowRemoteAccessConnections
+```
 ## Preventing Device Powerwash
 The use of powerwashing devices can negatively affect users and admins through data loss, policy and enrollment issues, and application compatibility. Because of this, most organizations choose to disable the option for users to powerwash their devices. 
 
