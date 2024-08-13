@@ -153,6 +153,7 @@ chrome://serviceworker-internals
 devtools://*
 chrome://settings/performance
 chrome://network#state
+chrome://inspect#devices
 ```
 ## Disabling Incognito Browsing
 To ensure that extensions consistently run within a user’s browser and to have full visibility into their activity, it is recommended that admins disable access to incognito mode. This will allow for complete monitoring of users during the day.
