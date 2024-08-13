@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="style.css">
+> [!CAUTION]
+> DO NOT MODIFY ANYTHING ELSE ON THIS PAGE, UNLESS YOU KNOW WHAT YOU ARE DOING (you probably don't), AS YOU COULD BREAK SOMETHING.
 
 # Table of Contents
 - [Introduction](#introduction)
