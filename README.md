@@ -3,38 +3,6 @@
 > [!CAUTION]
 > Newer versions of the LMEAT exploit can be leveraged on any fully patched chrome device. When used, device policy and managed extensions can be disabled or even removed. To disable it, [admins can follow these instructions](#preventing-lmeat-exploitation).
 
-# Table of Contents
-- [Introduction](#introduction)
-- [Securing Kiosk Applications](#securing-kiosk-applications)
-   * [Implementing a URL Allowlist](#implementing-a-url-allowlist)
-   * [Managing Accessibility Features](#managing-accessibility-features)
-   * [Forcing Wifi Configurations](#forcing-wifi-configurations)
-- [Controlling Dev Features](#controlling-dev-features)
-   * [Limiting Crosh & Terminal Access](#limiting-crosh-terminal-access)
-   * [Disabling Chrome Flags](#disabling-chrome-flags)
-   * [Securing Device Recovery Screens](#securing-device-recovery-screens)
-   * [Enabling Verified Mode](#enabling-verified-mode)
-- [Setting Up Managed Extensions](#setting-up-managed-extensions)
-   * [Blocking Extension Installations](#blocking-extension-installations)
-   * [Force Install Extensions](#force-install-extensions)
-   * [Adding Optional Extension Installations](#adding-optional-extension-installations)
-   * [Preventing LMEAT Exploitation](#preventing-lmeat-exploitation)
-   * [Disabling Developer Access](#disabling-developer-access)
-   * [Enabling Manifest V2 Extensions](#enabling-manifest-v2-extensions)
-- [Securing Sign Ins](#securing-sign-ins)
-   * [Removing Return Instructions](#removing-return-instructions)
-   * [Disabling Guest Mode](#disabling-guest-mode)
-   * [Restricting Sign-in Access](#restricting-sign-in-access)
-   * [Hiding Personal Information on Login](#hiding-personal-information-on-login)
-   * [Preventing Multiple Sign-ins](#preventing-multiple-sign-ins)
-- [Disabling System Features](#disabling-system-features)
-   * [Managing Certificates](#managing-certificates)
-   * [Disabling The Task Manager](#disabling-the-task-manager)
-   * [Blocking Internal URLs](#blocking-internal-urls)
-   * [Disabling Incognito Browsing](#disabling-incognito-browsing)
-   * [Removing Outdated/Unsafe Policies](#removing-outdatedunsafe-policies)
-   * [Preventing Device Powerwash](#preventing-device-powerwash)
-  
 # Introduction
 Welcome! This project serves as a tool for system administrators to implement policies across chromeOS devices to improve security and limit user risk. To maximise compatibility, all changes will be centered around the Google admin console. 
 
