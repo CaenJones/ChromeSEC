@@ -3,6 +3,9 @@
 > [!CAUTION]
 > Newer versions of the LMEAT exploit can be leveraged on any fully patched chrome device. When used, device policy and managed extensions can be disabled or even removed. To disable it, [admins can follow these instructions](#preventing-lmeat-exploitation).
 
+> [!TIP]
+> Like this repo? Star and share it with another chromeOS admin! 😄
+
 # Introduction
 Welcome! This project serves as a tool for system administrators to implement policies across chromeOS devices to improve security and limit user risk. To maximise compatibility, all changes will be centered around the Google admin console. 
 
