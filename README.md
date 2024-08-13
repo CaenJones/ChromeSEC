@@ -15,6 +15,7 @@
    * [Blocking Extension Installations](#blocking-extension-installations)
    * [Force Install Extensions](#force-install-extensions)
    * [Adding Optional Extension Installations](#adding-optional-extension-installations)
+   * [Preventing LMEAT Exploitation](#preventing-lmeat-exploitation)
    * [Disabling Developer Access](#disabling-developer-access)
    * [Enabling Manifest V2 Extensions](#enabling-manifest-v2-extensions)
 - [Securing Sign Ins](#securing-sign-ins)
@@ -97,6 +98,19 @@ This functionality is available in **Devices > Chrome > Apps & extensions** or (
 Admins have the option to create an optional list of extensions users can install. This could be used for programs that are only needed on some systems but have not been effectively grouped in the active directory, or the Google admin console.
 
 An allow list can be implemented by going to **Devices > Chrome > Apps & Extensions** and then selecting the **Block all apps, admin manages allowlist** option. Then go to the **From the Chrome Web Store** dropdown, and type in the IDs of the extensions you want to allow.
+
+## Preventing LMEAT Exploitation 
+An existing exploit on ChromeOS nicknamed LMEAT (literally the meatiest exploit of all time) can be leveraged by users on virtually any device to disable and bypass extensions and their policies. Admins in an enterprise environment can take steps to prevent the main exploit and its variations by implementing the following steps.
+
+For the LMEAT exploit to be leveraged, users need access to one of the larger files in the target extension. This can normally be found with a [crxviewer](https://robwu.nl/crxviewer/). The most common files leveraged are:
+
+- /background.js
+- /manifest.json
+- /generated_background_page.html
+
+Admins then can then blacklist these pathways by going to **Menu > Devices > Chrome > Settings** and then to **URL Blocking**. Now go through your list of managed extensions and add the biggest filenames found on crxviewer (1000 kb or above) + the files listed on the list. A working example would be like `chrome-extension://extension_id_here/filename`. You should be able to find your users installed extensions on the **chrome://extensions** page. 
+
+To prevent further exploitation, admins should also block all extension management pages at `chrome://extensions/?id=YOUR_EXTENSIONS_ID_HERE` by going through and adding the individual IDs.  
 
 ## Disabling Developer Access
 Users can access developer features through the Chrome extensions menu, which could potentially affect security and web filtering. Because of this, administrators may want to disable these features from Google  Admin.
