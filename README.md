@@ -82,7 +82,7 @@ For the LTMEAT exploit to be leveraged, users need access to one of the larger f
 - /manifest.json
 - /generated_background_page.html
   
-Admins can then blacklist these pathways by going to **Menu > Devices > Chrome > Settings > URL Blocking**. Then go through your list of managed extensions and locate the biggest files with the crxviewer (1000 kb or above) + the files shown above. A working entry would be: `chrome-extension://extension_id_here/filename`. All extensions and their ID's can be located at **chrome://extensions**. 
+Admins can then blacklist these pathways by going to **Menu > Devices > Chrome > Settings > URL Blocking**. Then go through your list of managed extensions and locate the biggest files with the crxviewer (1000 kb or more) + the files shown above. A working entry would be: `chrome-extension://extension_id_here/filename`. All extensions and their ID's can be located at **chrome://extensions**. 
 
 To prevent further exploitation, admins should also block all extension management pages at `chrome://extensions/?id=YOUR_EXTENSIONS_ID_HERE`.  
 
