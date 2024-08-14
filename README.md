@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="style.css">
 
 > [!CAUTION]
-> Newer versions of the LMEAT exploit can be leveraged on any fully patched chrome device. When used, device policy and managed extensions can be disabled or even removed. To disable it, [admins can follow these instructions](#preventing-lmeat-exploitation).
+> Newer versions of the LTMEAT exploit can be leveraged on any fully patched chrome device. When used, device policy and managed extensions can be disabled or even removed. To disable it, [admins can follow these instructions](#preventing-LTMEAT-exploitation).
 
 > [!TIP]
 > Like this repo? Star and share it with another chromeOS admin! 😄
@@ -73,10 +73,10 @@ Admins have the option to create an optional list of extensions users can instal
 
 An allow list can be implemented by going to **Devices > Chrome > Apps & Extensions** and then selecting the **Block all apps, admin manages allowlist** option. Then go to the **From the Chrome Web Store** dropdown, and type in the IDs of the extensions you want to allow.
 
-## Preventing LMEAT Exploitation 
-An existing exploit on ChromeOS nicknamed LMEAT (literally the meatiest exploit of all time) can be leveraged by users on virtually any device to disable and bypass extensions and their policies. Admins in an enterprise environment can take steps to prevent the main exploit and its variations by implementing the following steps.
+## Preventing LTMEAT Exploitation 
+An existing exploit on ChromeOS nicknamed LTMEAT (literally the meatiest exploit of all time) can be leveraged by users on virtually any device to disable and bypass extensions and their policies. Admins in an enterprise environment can take steps to prevent the main exploit and its variations by implementing the following steps.
 
-For the LMEAT exploit to be leveraged, users need access to one of the larger files in the target extension. This can normally be found with a [crxviewer](https://robwu.nl/crxviewer/). The most common files leveraged are:
+For the LTMEAT exploit to be leveraged, users need access to one of the larger files in the target extension. This can normally be found with a [crxviewer](https://robwu.nl/crxviewer/). The most common files leveraged are:
 
 - /background.js
 - /manifest.json
