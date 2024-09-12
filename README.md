@@ -74,13 +74,13 @@ Admins have the option to create an optional list of extensions users can instal
 An allow list can be implemented by going to **Devices > Chrome > Apps & Extensions** and then selecting the **Block all apps, admin manages allowlist** option. Then go to the **From the Chrome Web Store** dropdown, and type in the IDs of the extensions you want to allow.
 
 ## Preventing LTMEAT Exploitation 
-An existing exploit on ChromeOS nicknamed LTMEAT (literally the meatiest exploit of all time) can be leveraged by users on virtually any device to disable and bypass managed extensions. Fortunately, admins can take steps to prevent the exploit and its variations by implementing the following steps.
+An existing exploit on ChromeOS nicknamed LTMEAT can be leveraged by users on virtually any device to disable and bypass managed extensions. Fortunately, admins can take steps to prevent the exploit and its variations by implementing the following steps.
 
 For the LTMEAT exploit to be leveraged, users need access to the chrome extensions menu, or an internal file within the extension package. To prevent this, admins can go to **Devices > Chrome > Settings > URL Blocking** and add the following addresses:
-
-- chrome-extension://*
-- chrome://extensions
-
+```
+chrome-extension://*
+chrome://extensions
+```
 ## Disabling Developer Access
 Users can access developer features through the Chrome extensions menu, which could potentially affect security and web filtering. Because of this, administrators may want to disable these features from Google  Admin.
 
