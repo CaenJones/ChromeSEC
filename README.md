@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="style.css">
 
 > [!CAUTION]
-> Newer versions of the LTMEAT exploit can be leveraged on any fully patched chrome device. When used, device policy and managed extensions can be disabled or even removed. To disable it, [admins can follow these instructions](#preventing-LTMEAT-exploitation).
+> The Sh1mmer and Sh1mmless RMA exploits can be used to unenroll any fully updated managed device. To track is usage, [admins can follow these instructions](#monitoring-sh1mmer-exploitation).
 
 > [!TIP]
 > Like this repo? Star and share it with another chromeOS admin! 😄
