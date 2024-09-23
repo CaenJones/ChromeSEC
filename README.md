@@ -188,12 +188,12 @@ This setting is available in **Devices > Chrome Devices** and under the **Powerw
 ## Monitoring Sh1mmer Exploitation 
 Sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the retail shim image to allow for the removal of write protection, and total device un-enrollment. 
 
-While no current fix exists for Sh1mmer, admins can track its usage in their workspace by checking for old device policy sync dates in the admin console.
+While no current fix exists for Sh1mmer, admins can track its usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
 
 ### Sh1mless RMA
 The Shimless RMA menu is a tool embedded into ChromeOS that allows technicians to make limited changes to the device after repairs. However, it can be accessed without authentication and used to fully reset and unenroll the device. 
 
-As the Shimless RMA menu is part of the device's firmware, it is not possible to patch it at this time. Admins can still use the same method shown with Sh1mmer to detect this exploit in the workspace. 
+As the Shimless RMA menu is part of the device's firmware, it is not possible to patch it at this time. Admins should blacklist access to `https://chromeos.google.com/partner/console/` and use the same methods shown with Sh1mmer to detect this exploit in the workspace. 
 
 
 
