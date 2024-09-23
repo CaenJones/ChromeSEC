@@ -184,3 +184,16 @@ RemoteAccessHostAllowRemoteAccessConnections
 The use of powerwashing devices can negatively affect users and admins through data loss, policy and enrollment issues, and application compatibility. Because of this, most organizations choose to disable the option for users to powerwash their devices. 
 
 This setting is available in **Devices > Chrome Devices** and under the **Powerwash** section choose **Do not allow powerwash to be triggered**. This will effectively prevent users from wiping the device except in the case of a TPM firmware update. 
+
+## Monitoring Sh1mmer Exploitation 
+Sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the retail shim image to allow for the removal of write protection, and total device un-enrollment. 
+
+While no current fix exists for Sh1mmer, admins can track its usage in their workspace by checking for old device policy sync dates in the admin console.
+
+### Sh1mless RMA
+The Shimless RMA menu is a tool embedded into ChromeOS that allows technicians to make limited changes to the device after repairs. However, it can be accessed without authentication and used to fully reset and unenroll the device. 
+
+As the Shimless RMA menu is part of the device's firmware, it is not possible to patch it at this time. Admins can still use the same method shown with Sh1mmer to detect this exploit in the workspace. 
+
+
+
