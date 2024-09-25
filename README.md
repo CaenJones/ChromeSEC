@@ -1,3 +1,6 @@
+<img src="https://github.com/CaenJones/ChromeSEC/blob/main/src/ChromeSEC%20Logo.png?raw=true" alt="ChromeSEC Logo.png"/>
+
+
 > [!CAUTION]
 > The Sh1mmer and Sh1mmless RMA exploits can be used to unenroll any fully updated managed device. To track is usage, [admins can follow these instructions](#monitoring-sh1mmer-exploitation).
 
