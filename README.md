@@ -10,7 +10,7 @@
 Welcome! Thank you for reading this. ChromeSEC is a compilation of Google documentation, individual group policy recommendations, and industry best practices. 
 System administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support. We aim to address this by creating a free, comprehensive guide on Chrome group policies all in one place.
 
-We are an open-source project, so if you would like to make a change or add something. Feel free to open a pull request.!
+We are an open-source project, so if you would like to make a change or add something feel free to open a pull request!
 
 # Securing Kiosk Applications
 Kiosk apps are often used for testing, payment, and help desks. This makes it extremely important to protect and manage them to prevent tampering or escape into the operating system. Here, we will discuss browser sandboxing and ways to control access to outside applications.
