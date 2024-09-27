@@ -7,9 +7,10 @@
 > Like this repo? Star and share it with another chromeOS admin! 😄
 
 # Introduction
-Welcome! This project serves as a tool for system administrators to implement policies across chromeOS devices to improve security and limit user risk. To maximise compatibility, all changes will be centered around the Google admin console. 
+Welcome! Thank you for reading this. ChromeSEC is a compilation of Google documentation, individual group policy recommendations, and industry best practices. 
+System administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support. We aim to address this by creating a free, comprehensive guide on Chrome group policies all in one place.
 
-This is an open-source project so if you have an addition, feel free to submit a pull request on GitHub.
+We are an open-source project, so if you would like to make a change or add something. Feel free to open a pull request.!
 
 # Securing Kiosk Applications
 Kiosk apps are often used for testing, payment, and help desks. This makes it extremely important to protect and manage them to prevent tampering or escape into the operating system. Here, we will discuss browser sandboxing and ways to control access to outside applications.
