@@ -155,6 +155,7 @@ chrome://inspect#devices
 chrome://indexeddb-internals/
 chrome://crostini-installer
 chrome://shimless-rma/
+chrome://chrome-signin
 html/crosh.html
 chrome-untrusted://*
 ```
