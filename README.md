@@ -24,7 +24,7 @@ In **Devices > Chrome > Settings > Device Settings > Kiosk Settings**, there is 
 In the same section, there should be another option for the **Kiosk floating accessibility menu**. This should also be disabled.
 
 ## Forcing Wifi Configurations
-To bypass Chrome and kiosk policy, users can disable wifi and put the system into a “limbo” state with the application and the Chrome menu.  This also allows them to re-enable blocked accessibility features before re-entering the kiosk program. Because of this, it is recommended to implement an organization policy to prevent changes in user settings and disconnection from networks.
+To bypass Chrome and kiosk policy, users can disable wifi and put the system into a “limbo” state with the application and the Chrome browser.  This also allows them to re-enable blocked accessibility features before using the kiosk program. Because of this, it is recommended to implement an organization policy to prevent changes in user network settings and the ability to disconnect from networks.
 
 First, you should disable users' ability to access wifi settings in **Devices > Chrome > Settings > Users & browsers > User Experience > and Disabled system features**. Then just select OS Settings, or Wifi Settings to disable access.
 Now in **Wifi Settings > Platform Access**, choose **Do not allow for both Chrome users and Chrome devices to use other networks**. Then enable **Automatically Connect** to force devices to only connect to your network when they are in range.
