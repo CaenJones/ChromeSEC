@@ -7,8 +7,7 @@
 > Like this repo? Star and share it with another chromeOS admin! 😄
 
 # Introduction
-Welcome! Thank you for reading this. ChromeSEC is a compilation of Google documentation, individual group policy recommendations, and industry best practices. 
-System administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support. We aim to address this by creating a free, comprehensive guide on Chrome group policies all in one place.
+Hola! Welcome to ChromeSEC. We know that system administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support. Because of this, we have created an always-changing, conprehensive guide to enable administrators to properly setup and secure their chromebooks in a short period of time.
 
 We are an open-source project, so if you would like to make a change or add something feel free to open a pull request!
 
