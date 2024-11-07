@@ -62,14 +62,12 @@ Allowing extensions from the Chrome Web Store could pose a security threat and a
 Admins should go to **Devices > Chrome > Apps & extensions** and in the **ExtensionSettings** policy set the mode to blocked to prevent users from installing their own extensions.
 
 ## Force Install Extensions
-Many organizations prefer to have filtering and SSO extensions already installed on their machines for convenience and security purposes. This can be accomplished by configuring the admin console to automatically install these extensions and apps.
+Many organizations want to have filtering and SSO extensions already installed on their computers. This can be done by configuring the admin console to automatically install these extensions and apps during device enrollment.
 
-This functionality is available in **Devices > Chrome > Apps & extensions** or (depending on your subscription) in **Chrome > Browser > Apps & Extensions**. Next, choose the **Users & browsers** for whom you want to install the extensions and input the application ID. Then just add the **force install** option for your chosen application.
+This option is available in **Devices > Chrome > Apps & extensions** or (depending on your GAC tier) in **Chrome > Browser > Apps & Extensions**. Next, choose the **Users & browsers** for who you want to install the extensions and input the application ID. Then just add the **force install** option for your chosen application.
 
 ## Adding Optional Extension Installations
-Admins have the option to create an optional list of extensions users can install. This could be used for programs that are only needed on some systems but have not been effectively grouped in the active directory, or the Google admin console.
-
-An allow list can be implemented by going to **Devices > Chrome > Apps & Extensions** and then selecting the **Block all apps, admin manages allowlist** option. Then go to the **From the Chrome Web Store** dropdown, and type in the IDs of the extensions you want to allow.
+Admins have the option to create an optional list of extensions users can install from the webstore. This could be used for programs that are only needed on some systems or for certain users. An allow list can be added by going to **Devices > Chrome > Apps & Extensions** and then selecting the **Block all apps, admin manages allowlist** option. Then go to the **From the Chrome Web Store** dropdown, and type in the IDs of the extensions you want to allow.
 
 ## Preventing LTMEAT Exploitation 
 An existing exploit on ChromeOS nicknamed LTMEAT can be leveraged by users on virtually any device to disable and bypass managed extensions. Fortunately, admins can take steps to prevent the exploit and its variations by implementing the following steps.
