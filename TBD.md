@@ -2,3 +2,4 @@
 - Reducing Attack Surfaces
 - User & Device Reporting / Data Management
 - Manage who can enroll device
+- Update management (force update?)
