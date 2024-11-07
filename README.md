@@ -120,17 +120,17 @@ Admins can navigate to **Devices > Chrome > Settings > Users & browsers** and sc
 ChromeOS gives users several features made to improve the general experience. However, these features also create gaps in terms of user security and device policies. Because of this, administrators may wish to disable certain features in order to enhance pre-existing controls.
 
 ## Managing Certificates
-Administrators have the option to prohibit user access to managing CA certificates to minimize the chances of leaked private keys or incorrect modifications to certs. This can improve overall device security posture and can also help in limiting user involvement.
+Administrators have the option to prevent user access to the certificate management page to make it harder to leak private keys or incorrectly modify certs. This can improve overall device security and can also help in limiting user configuration.
 
-This configuration is available in  **Devices > Chrome > Settings > Users & browsers**.  Under **User management of installed CA certificates**, select **Disallow users from managing certificates** and save.
+This change is available in  **Devices > Chrome > Settings > Users & browsers**. Then, under **User management of installed CA certificates**, select **Disallow users from managing certificates** and save it.
 
 ## Disabling The Task Manager
 To ensure the integrity of device extensions and system stability, admins may want to disable the Chrome task manager or set limits on what extensions/applications can be stopped.
 
-The option to disable the Chrome task manager is one of the first under **Devices > Chrome > Settings > Users & browsers**. Admins should choose the option to **block local users from using the task manager**.
+The option to disable the Chrome task manager is one of the first under **Devices > Chrome > Settings > Users & browsers**. Admins can then choose the option to **block local users from using the task manager**.
 
 ## Blocking Internal URLs
-Google Chrome has several internal addresses that allow access to developer settings and system changes which can compromise device security and get around policies. Because of this, admins may want to  disable these features in **Devices > Chrome > Settings > Users & browsers > URL Blocking:**
+Google Chrome has several internal addresses that allow access to developer settings and system changes which can compromise device security and get around policies. Because of this, admins may want to  disable these pages in **Devices > Chrome > Settings > Users & browsers > URL Blocking:**
 ```
 chrome://net-export
 chrome://sync-internals
@@ -156,12 +156,12 @@ chrome-untrusted://*
 chrome://policy
 ```
 ## Disabling Incognito Browsing
-To ensure that extensions consistently run within a user’s browser and to have full visibility into their activity, it is recommended that admins disable access to incognito mode. This will allow for complete monitoring of users during the day.
+To ensure that extensions consistently run in the browser, it is recommended that admins disable access to incognito mode.
 
 Navigate to **Devices > Chrome > Settings** and select **User and Browser**. In this section, you can find an option to **disable incognito mode**. Change the value to **true** and click save to apply the changes.
 
 ## Removing Outdated/Unsafe Policies 
-Many policies on google admin exist to expand device compatibility, however some of these services are for legacy protocols or are just no longer secure.These policies could have been set by different administrators, or just never removed in a timely manor. This can widen your organizations attack surface and causes unnecessary risk. Admins should be sure to check if any GPOs shown below are enabled in chrome://policy:
+Many policies on google admin exist to expand device compatibility, however some of these services are for outdated systems and are no longer secure. These policies could have been set by different administrators, or just never removed. This can widen your organizations attack surface and causes unnecessary risk. Admins should be sure to check and remove any GPOs shown below that are enabled in chrome://policy:
 ```
 EnableDeprecatedWebPlatformFeatures
 RunAllFlashInAllowMode
@@ -179,9 +179,9 @@ SafeBrowsingAllowlistDomains
 RemoteAccessHostAllowRemoteAccessConnections
 ```
 ## Preventing Device Powerwash
-The use of powerwashing devices can negatively affect users and admins through data loss, policy and enrollment issues, and application compatibility. Because of this, most organizations choose to disable the option for users to powerwash their devices. 
+The option to powerwash devices can negatively affect users and admins through data loss, policy changes, and enrollment issues. Because of this, most organizations choose to disable the option for users to powerwash their devices. 
 
-This setting is available in **Devices > Chrome Devices** and under the **Powerwash** section choose **Do not allow powerwash to be triggered**. This will effectively prevent users from wiping the device except in the case of a TPM firmware update. 
+This setting is available in **Devices > Chrome Devices**. Under the **Powerwash** section, choose **Do not allow powerwash to be triggered**. This will prevent users from wiping the device except during a TPM firmware update. 
 
 ## Monitoring Sh1mmer Exploitation 
 Sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the retail shim image to allow for the removal of write protection, and total device un-enrollment. 
@@ -192,6 +192,3 @@ While no current fix exists for Sh1mmer, admins can track its usage in their wor
 The Shimless RMA menu is a tool embedded into ChromeOS that allows technicians to make limited changes to the device after repairs. However, it can be accessed without authentication and used to fully reset and unenroll the device. 
 
 As the Shimless RMA menu is part of the device's firmware, it is not possible to patch it at this time. Admins should blacklist access to `https://chromeos.google.com/partner/console/` and use the same methods shown with Sh1mmer to detect this exploit in the workspace. 
-
-
-
