@@ -57,9 +57,9 @@ Admins can go to **Devices > Chrome > Settings > Device** in the admin console a
 Chrome extensions allow for new functionality on Chromebooks such as drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage.
 
 ## Blocking Extension Installations
-Allowing extensions from the Chrome Web Store could pose a security threat and damage workplace integrity, as most offices do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list to limit risks.
+Allowing extensions from the Chrome Web Store could pose a security threat and allow for malicious programs to be installed. This poises a bigger threat on Chromebooks as most offices and schools do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list.
 
-Admins should go to **Devices > Chrome > Apps & extensions** and in the **ExtensionSettings** policy set the mode to blocked to prevent users from installing their extensions.
+Admins should go to **Devices > Chrome > Apps & extensions** and in the **ExtensionSettings** policy set the mode to blocked to prevent users from installing their own extensions.
 
 ## Force Install Extensions
 Many organizations prefer to have filtering and SSO extensions already installed on their machines for convenience and security purposes. This can be accomplished by configuring the admin console to automatically install these extensions and apps.
