@@ -44,17 +44,17 @@ Chrome Flags, is a feature built-in on ChromeOS that gives users the option to e
 In Google Admin, you can go to **Menu > Devices > Chrome > Settings** and just add **chrome://flags** to the disabled features list. Users will then be unable to access the application.
 
 ## Securing Device Recovery Screens
-Although developer mode will not be enabled by default on enterprise devices, the recovery screen can still be accessed using keyboard shortcuts. Due to an oversight, attempting to enable developer mode on enterprise machines would result in an automatic powerwash, even if this action is prohibited by device policy. This mistake could lead to serious problems and may even result in the device being removed from enterprise enrollment.
+Although developer mode will not be disabled by default on enterprise devices, the recovery screen can still be accessed using keyboard shortcuts. Due to an oversight, attempting to enable developer mode on enterprise machines would result in an automatic powerwash, even if this is prohibited by device policy. This mistake could lead to serious problems and may even result in the device being removed from enterprise enrollment due to a glitch on the signin menu.
 
-While it is not possible to directly disable the recovery menu, admins can enable an option called **Forced Re-enrollment**, making it impossible to tamper with the device after the powerwash. You can enable this by going to **Devices > Chrome > Settings > Device Settings > Enrollment and Access**. Then navigate down to **Forced re-enrollment** and check **Force device to automatically re-enroll after wiping**.
+While it is not possible to directly disable the recovery menu, admins can enable an option called **Forced Re-enrollment**, making it impossible to unenroll with the device after a powerwash. You can enable this by going to **Devices > Chrome > Settings > Device Settings > Enrollment and Access**. Then navigate down to **Forced re-enrollment** and check **Force device to automatically re-enroll after wiping**.
 
 ## Enabling Verified Mode
-To provide extra protection against developer mode, admins can enable Verified Boot Mode. This blocks developer mode and prevents system startup unless recovered. This would also help prevent policy circumvention and tampering with OS internals.
+To provide extra protection against developer mode and firmware-level modification, admins can enable Verified Boot Mode. This blocks developer mode and prevents system startup unless recovered with a signed ChromeOS image. 
 
 Admins can go to **Devices > Chrome > Settings > Device** in the admin console and select the option for **requiring verified mode boot for Verified Access**.
 
 # Setting Up Managed Extensions
-Chrome extensions offer a wide range of functions like drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, and privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage to prevent these risks.
+Chrome extensions allow for new functionality on Chromebooks such as drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage.
 
 ## Blocking Extension Installations
 Allowing extensions from the Chrome Web Store could pose a security threat and damage workplace integrity, as most offices do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list to limit risks.
