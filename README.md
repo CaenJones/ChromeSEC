@@ -70,18 +70,18 @@ This option is available in **Devices > Chrome > Apps & extensions** or (dependi
 Admins have the option to create an optional list of extensions users can install from the webstore. This could be used for programs that are only needed on some systems or for certain users. An allow list can be added by going to **Devices > Chrome > Apps & Extensions** and then selecting the **Block all apps, admin manages allowlist** option. Then go to the **From the Chrome Web Store** dropdown, and type in the IDs of the extensions you want to allow.
 
 ## Preventing LTMEAT Exploitation 
-An existing exploit on ChromeOS nicknamed LTMEAT can be leveraged by users on virtually any device to disable and bypass managed extensions. Fortunately, admins can take steps to prevent the exploit and its variations by implementing the following steps.
+An existing exploit on ChromeOS nicknamed LTMEAT can be leveraged by users on any device to disable and bypass managed extensions. Fortunately, admins can take steps to prevent the exploit and its variations by implementing the following steps.
 
-For the LTMEAT exploit to be leveraged, users need access to the chrome extensions menu, or an internal file within the extension package. To prevent this, admins can go to **Devices > Chrome > Settings > URL Blocking** and add the following addresses:
+For the LTMEAT exploit to be leveraged, users need access to the chrome extensions menu, or an internal file within the extension package. To prevent this, admins can just go to **Devices > Chrome > Settings > URL Blocking** and add the following addresses to the blacklist:
 ```
 chrome-extension://*
 chrome://extensions
 ```
 ## Disabling Developer Access
-Users can access developer features through the Chrome extensions menu, which could potentially affect security and web filtering. Because of this, administrators may want to disable these features from Google  Admin.
+Users can access developer features through the Chrome extensions menu, which could affect security and web filtering. Because of this, administrators may want to disable these features from Google Admin.
 
 If your devices run v127 or below, you need to disable **DeveloperToolsAvailability** by going to **Devices > Chrome > Settings > User experience > Developer tools** and clicking the disable dropdown.
-Admins with devices running the beta (at this time) v128 should navigate to the same menu section as shown in v127 but should instead choose to disable **ExtensionDeveloperModeSettings**.
+Admins with devices running v128 or above should navigate to the same menu section as shown in v127 but should instead choose to disable **ExtensionDeveloperModeSettings**.
 
 ## Enabling Manifest V2 Extensions
 As of May 31st, 2024, Google has launched extension manifest v3, unfortunately some extensions and developers still have not updated to adapt to this change. This may affect tools like 2fa and filtering on some chromeOS devices. Because of this, admins should enable the v2 compatibility as a precaution until developers finish updates.
