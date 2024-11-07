@@ -89,12 +89,12 @@ As of May 31st, 2024, Google has launched extension manifest v3, unfortunately s
 To do this, admins need to navigate to **Devices > Chrome > Settings > Users & browser settings** and select **Manifest V2 extension availability** and enable it. 
 
 # Securing Sign Ins
-Ensuring the safety and integrity of an organization’s data is crucial. By using Google Admin’s comprehensive security measures, organizations can safeguard their information and implement strong user controls.  Most, if not all controls mentioned in this section will appear in **Devices > Chrome > Settings > Devices**. Because of this, only a description of the change and its impact will be mentioned per subsection.
+Keeping an organization’s data safe is very important. Google Admin provides a range of security features that help organizations protect their information and set up strong controls for users. All of these controls can be found under **Devices > Chrome > Settings > Devices**. Therefore, only a short description of each change and its effects will be added in the following sections.
 
 ## Removing Return Instructions
-Oftentimes when an enterprise device is lost or stolen, admins can set up instructions on the login screen to have the device returned.  However, this can lead to unauthorized access and disclosure of sensitive information. By disabling return instructions, admins can effectively brick a device until either returned or recovered.
+Oftentimes when an enterprise device is lost or stolen, admins can set up instructions on the login screen to have the device returned. However, this can allow users to bypass locked mode and enter the signin menu. By disabling return instructions, admins can effectively brick a device until its either returned or recovered.
 
-Admins should choose to **disable with login screen** to completely prevent device access until manually unlocked by an authorized user. Along with appropriate wifi and settings controls, it would be nearly impossible to resell or access the stolen device.
+Admins should choose to **disable without login screen** to completely prevent device access until manually unlocked by an authorized user. Along with correct networking controls, it would be impossible to unenroll or resell the device.
 
 ## Disabling Guest Mode
 The guest account on Chrome devices lets users access a passwordless, policy-immune account with limited functionality. This could lead to unauthorized access/use of the device and could even be used to circumvent filtering and security protections put in place on the device.
