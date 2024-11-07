@@ -102,22 +102,22 @@ The guest account on Chrome devices lets users access a passwordless, policy-imm
 To remove access to the guest account, just set the **Guest mode** option to disabled.
 
 ## Restricting Sign-in Access
-To prevent unauthorized entry to enterprise Chromebooks, it is important to limit sign-in access to specific users or domains. This not only improves security but also gives administrators the ability to better control user permissions for different groups.
+To prevent unauthorized access to your Chromebooks, it is important to limit sign-in access to specific users or domains for each device. This not only improves security but also gives administrators the ability to better control user permissions for different groups.
 
-This functionality can be found in the User & Browser settings where admins can add different domains to different device groups **(e.g., example.com)**. Optionally, admins can also allow consumer accounts for limited personal use (group policy will still apply).
+This functionality can be found in the **User & Browser Settings** where admins can add different domains to different device groups **(e.g., example.com)**. Admins can also allow normal accounts for limited personal use but group policy will still apply.
 
 ## Hiding Personal Information on Login
 Some organizations may have several users log in to the same device every day, or companies may want to hide the personal information of users if the Chromebooks are meant to be taken outside of the building.  Either way, admins may want to consider removing profile pictures and information of users on the general chromeOS login screen.
 
-To set this up, all admins have to do is go to the device settings in the unit you want to change and go to the **sign-in screen section**.  There, just set the value of **Never show user names and photos** to true.
+To set this up, all admins have to do is go to the device settings in the unit you want to change and go to the **sign-in screen section**. There, just set the value of **Never show user names and photos** to true.
 
 ## Preventing Multiple Sign-ins
-To ensure that all Chrome policies are always enforced for every user, admins may want to block sign-ins for org users. However,  they can still allow those users to have dual accounts for services such as Gmail while keeping the same controls.
+To make sure that all Chrome policies are always enforced for every user, admins may want to block several sign-ins for enterprise users. However, personal accounts can still be added to the devices if wanted, with the same controls in effect.
 
-Admins can navigate to **Devices > Chrome > Settings > Users & browsers** and scroll down to **Multiple Sign-In Access**. There should be a toggle for the option to **Block Multiple Sign-in Access to Users in this Organization**.
+Admins can navigate to **Devices > Chrome > Settings > Users & browsers** and scroll down to **Multiple Sign-In Access**. There should be an option to **Block Multiple Sign-in Access to Users in this Organization** that should then be enabled.
 
 # Disabling System Features
-ChromeOS provides users with several features designed to improve the experience. However, these features also create gaps in terms of user security and device policies. Because of this, administrators may wish to disable certain features to keep device integrity and compliance.
+ChromeOS gives users several features made to improve the general experience. However, these features also create gaps in terms of user security and device policies. Because of this, administrators may wish to disable certain features in order to enhance pre-existing controls.
 
 ## Managing Certificates
 Administrators have the option to prohibit user access to managing CA certificates to minimize the chances of leaked private keys or incorrect modifications to certs. This can improve overall device security posture and can also help in limiting user involvement.
