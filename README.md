@@ -30,7 +30,7 @@ First, you should disable users' ability to access wifi settings in **Devices > 
 Now in **Wifi Settings > Platform Access**, choose **Do not allow for both Chrome users and Chrome devices to use other networks**. Then enable **Automatically Connect** to force devices to only connect to your network when they are in range.
 
 # Controlling Dev Features
-Google has included several development tools directly into ChromeOS, however, they are often used to bypass policies and remove device enrollment. It’s important to secure and manage access to these programs.
+ChromeOS was originally developed to allow user modification of the system. However, this could be damaging to enterprise environments, and it is often used to bypass policies and remove device enrollment. This makes it important to secure and manage access to these processes.
 
 ## Limiting Crosh & Terminal Access
 Chrome terminal and Crosh have tools for device management, but admins may want to limit access through the admin console for security purposes.
