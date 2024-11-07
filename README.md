@@ -158,6 +158,7 @@ chrome://shimless-rma/
 chrome://chrome-signin
 html/crosh.html
 chrome-untrusted://*
+chrome://policy
 ```
 ## Disabling Incognito Browsing
 To ensure that extensions consistently run within a user’s browser and to have full visibility into their activity, it is recommended that admins disable access to incognito mode. This will allow for complete monitoring of users during the day.
