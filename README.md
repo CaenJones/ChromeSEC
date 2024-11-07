@@ -7,7 +7,9 @@
 > Like this repo? Star and share it with another chromeOS admin! 😄
 
 # Introduction
-Hola! Welcome to ChromeSEC. We know that system administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support. Because of this, we have created an always-changing, comprehensive guide to enable administrators to properly set up and secure their Chromebooks quickly.
+Hola! Welcome to ChromeSEC. We know that system administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support.
+
+Because of this, we have created an always-changing, comprehensive guide to enable administrators to properly set up and secure their Chromebooks quickly.
 
 We are an open-source project, so if you would like to make a change or add something feel free to open a pull request!
 
