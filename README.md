@@ -7,22 +7,20 @@
 > Like this repo? Star and share it with another chromeOS admin! 😄
 
 # Introduction
-Hola! Welcome to ChromeSEC. We know that system administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support. Because of this, we have created an always-changing, conprehensive guide to enable administrators to properly setup and secure their chromebooks in a short period of time.
+Hola! Welcome to ChromeSEC. We know that system administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support. Because of this, we have created an always-changing, comprehensive guide to enable administrators to properly set up and secure their Chromebooks quickly.
 
 We are an open-source project, so if you would like to make a change or add something feel free to open a pull request!
 
 # Securing Kiosk Applications
-Kiosk apps are often used for testing, payment, and help desks. This makes it extremely important to protect and manage them to prevent tampering or escape into the operating system. Here, we will discuss browser sandboxing and ways to control access to outside applications.
+Kiosk apps are often used for testing, payment consoles, and helpdesk systems. This makes it extremely important to protect and configure them to prevent tampering or the ability to misuse them as filtering and monitoring extensions are usually inactive. Here is how you can properly setup your Kiosk programs to run in a safe and secure manner. 
 
 ## Implementing a URL Allowlist
-Enabling a whitelist within a Kiosk application to prevent outside browser access is available within the Google Admin panel at **Devices > Chrome > Settings > Device Settings > Kiosk Settings > URL Blocking**
-
-Here, you can either add blocked URLs to disable certain websites or set up a whitelist to only allow certain pages.
+Enabling a domain whitelist inside a Kiosk application can prevent users from accessing unfiltered pages within the program. Using the Google Admin panel at **Devices > Chrome > Settings > Device Settings > Kiosk Settings > URL Blocking** you can either add blocked URLs to disable certain websites or set up a whitelist to only allow certain pages.
 
 ## Managing Accessibility Features
-Tools like ChromeVOX can aid users with disabilities, but it also has the potential to bypass device policies by overlaying kiosk programs and launching web pages. Because of this, administrators should consider managing or disabling accessibility features during kiosk sessions.
+Tools like ChromeVOX and other accessibility features have the potential to bypass device policies by overlaying kiosk programs and enabling users to launch web pages. Because of this, administrators should consider managing or disabling certain accessibility features in kiosk programs.
 
-In **Devices > Chrome > Settings > Device Settings > Kiosk Settings**, there is a section called **Kiosk Accessibility Shortcuts**. Admins should choose to restrict access to this functionality.
+In **Devices > Chrome > Settings > Device Settings > Kiosk Settings**, there is a section called **Kiosk Accessibility Shortcuts**. Admins should choose to disable these shortcuts.
 In the same section, there should be another option for the **Kiosk floating accessibility menu**. This should also be disabled.
 
 ## Forcing Wifi Configurations
