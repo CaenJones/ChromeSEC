@@ -97,9 +97,9 @@ Oftentimes when an enterprise device is lost or stolen, admins can set up instru
 Admins should choose to **disable without login screen** to completely prevent device access until manually unlocked by an authorized user. Along with correct networking controls, it would be impossible to unenroll or resell the device.
 
 ## Disabling Guest Mode
-The guest account on Chrome devices lets users access a passwordless, policy-immune account with limited functionality. This could lead to unauthorized access/use of the device and could even be used to circumvent filtering and security protections put in place on the device.
+The guest account on Chrome devices lets users access a passwordless, policy-immune account with limited functionality. This could lead to unauthorized use of the device and could be used to bypass filtering and security protections.
 
-To remove access to the guest account, navigate to the pre-clarified menu subsection and just toggle the **Guest mode** option to disabled.
+To remove access to the guest account, just set the **Guest mode** option to disabled.
 
 ## Restricting Sign-in Access
 To prevent unauthorized entry to enterprise Chromebooks, it is important to limit sign-in access to specific users or domains. This not only improves security but also gives administrators the ability to better control user permissions for different groups.
