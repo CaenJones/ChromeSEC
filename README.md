@@ -33,10 +33,10 @@ Now in **Wifi Settings > Platform Access**, choose **Do not allow for both Chrom
 ChromeOS was originally developed to allow user modification of the system. However, this could be damaging to enterprise environments, and it is often used to bypass policies and remove device enrollment. This makes it important to secure and manage access to these processes.
 
 ## Limiting Crosh & Terminal Access
-Chrome terminal and Crosh have tools for device management, but admins may want to limit access through the admin console for security purposes.
+Chrome terminal and Crosh allow users to customise and change ChromeOS, but admins may want to limit access through the admin console for security purposes and to prevent damage to the device.
 
-Admins in the console should go to **Devices > Chrome > Settings > User & browser settings**. You should then see a section called **User Experience and then Disabled System Features**. Add **Crosh** to disable access.
-Admins should also consider adding **/html/crosh.html** into the URL blacklist for wider coverage.
+Admins should use GAC to enter **Devices > Chrome > Settings > User & browser settings**. You should then see a section called **User Experience and then Disabled System Features**. Add **Crosh** to disable access.
+Admins should also add **/html/crosh.html** into the URL blacklist to fully prevent access.
 
 ## Disabling Chrome Flags
 Chrome Flags, a feature built-in on ChromeOS, gives users the option to adjust custom settings for their applications and devices. While this can be helpful in a nonenterprise environment, it’s important to properly manage flags to prevent end users from disabling extensions or removing device policies.
