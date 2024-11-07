@@ -39,7 +39,7 @@ Admins should use GAC to enter **Devices > Chrome > Settings > User & browser se
 Admins should also add **/html/crosh.html** into the URL blacklist to fully prevent access.
 
 ## Disabling Chrome Flags
-Chrome Flags, a feature built-in on ChromeOS, gives users the option to adjust custom settings for their applications and devices. While this can be helpful in a nonenterprise environment, it’s important to properly manage flags to prevent end users from disabling extensions or removing device policies.
+Chrome Flags, is a feature built-in on ChromeOS that gives users the option to enable experimental features on their chrome device. While this can be helpful in a nonenterprise environment, it’s important to properly manage flags to prevent end users from making the system unstable, and tampering with the device.
 
 In Google Admin, you can go to **Menu > Devices > Chrome > Settings** and just add **chrome://flags** to the disabled features list. Users will then be unable to access the application.
 
