@@ -25,4 +25,7 @@ Thanks to the people who debated, disagreed, contributed, and talked about chrom
   <a href="https://github.com/theamazing0" target="_blank">
     <img src="https://github.com/theamazing0.png" width="100" height="100" alt="TheAmazing0" />
   </a>
+  <a href="about:blank" target="_blank">
+    <img src="https://github.com/theamazing0.png" width="100" height="100" alt="ChromeSEC GC" />
+  </a>
 </p>
