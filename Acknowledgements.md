@@ -28,4 +28,6 @@ Thanks to the people who debated, disagreed, contributed, and talked about chrom
   <a href="about:blank" target="_blank">
     <img src="https://github.com/CaenJones/ChromeSEC/blob/main/src/GC.png" width="100" height="100" alt="ChromeSEC GC" />
   </a>
+  
+  ![alt text](https://github.com/CaenJones/ChromeSEC/blob/main/src/kas.jpg?raw=true)
 </p>
