@@ -11,7 +11,7 @@ Hola! Welcome to ChromeSEC. We know that system administrators constantly work w
 
 Because of this, we have created an always-changing, comprehensive guide to enable administrators to properly set up and secure their Chromebooks quickly.
 
-We are an open-source project, so if you would like to make a change or add something feel free to open a pull request!
+We are an open-source project, so if you would like to make a change or add something feel free to open a pull request! Also see (Acknowledgements)[https://github.com/CaenJones/ChromeSEC/blob/main/Acknowledgements.md].
 
 # Securing Kiosk Applications
 Kiosk apps are often used for testing, payment consoles, and helpdesk systems. This makes it extremely important to protect and configure them to prevent tampering or the ability to misuse them as filtering and monitoring extensions are usually inactive. Here is how you can properly setup your Kiosk programs to run in a safe and secure manner. 
