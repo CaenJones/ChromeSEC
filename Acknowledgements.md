@@ -1,5 +1,5 @@
 # Acknowledgements
-
+Thanks to the people who debated, disagreed, contributed, and talked about chromeSEC! :)
 <p align="center">
   <img src="https://github.com/catfoolyou.png" width="110" height="110" alt="CatFoolYou" />
   <img src="https://github.com/AshtonDavies.png" width="110" height="110" alt="Ashton Davies" />
