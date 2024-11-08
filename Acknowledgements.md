@@ -1,6 +1,6 @@
 # Acknowledgements
 Thanks to the people who debated, disagreed, contributed, and talked about chromeSEC! :)
-<p align="center">
+<p>
   <a href="https://github.com/catfoolyou" target="_blank">
     <img src="https://github.com/catfoolyou.png" width="110" height="110" alt="CatFoolYou" />
   </a>
