@@ -1,7 +1,7 @@
 <img src="https://github.com/CaenJones/ChromeSEC/blob/main/src/ChromeSEC%20Logo.png?raw=true" alt="ChromeSEC Logo.png"/>
 
 > [!IMPORTANT]  
-> KV5 when?
+> Countdown to KV5!
 
 > [!TIP]
 > Like this repo? Star and share it with another chromeOS admin! 😄
