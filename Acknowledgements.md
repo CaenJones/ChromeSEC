@@ -17,7 +17,7 @@ Thanks to the people who debated, disagreed, contributed, and talked about chrom
     <img src="https://github.com/truekas.png" width="100" height="100" alt="TrueKAS" />
   </a>
   <a href="https://github.com/s0urce-c0de" target="_blank">
-    <img src="https://github.com/s0urce-c0de.png" width="100" height="100" alt="S0urce c0de" />
+    <img src="https://github.com/s0urce-c0de.png" width="100" height="100" alt="s0urce-c0de" />
   </a>
   <a href="https://github.com/nightfallenxyz" target="_blank">
     <img src="https://github.com/nightfallenxyz.png" width="100" height="100" alt="Ash" />
