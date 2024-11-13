@@ -90,6 +90,17 @@ As of May 31st, 2024, Google has launched extension manifest v3, unfortunately s
 
 To do this, admins need to navigate to **Devices > Chrome > Settings > Users & browser settings** and select **Manifest V2 extension availability** and enable it. 
 
+## Disabling Bookmarklets While Allowing Functionality 
+While `javascript://` and `data:` bookmarklets can be used to disable extensions and tamper with the device. Howver, fully disabling them can break normal functionality on websites and programs. Because of this, admins can use a device policy called `JavaScriptBlockedForUrls`. 
+
+This policy is available in **Devices > Chrome > User & Browser Settings > Security > Javascript Settings**. There should be a section where you can add different URLs to prevent javascript from running. It is recommended that you add the following addresses:
+```
+file://*
+data://*
+javascript://*
+html://*
+```
+
 # Securing Sign Ins
 Keeping an organization’s data safe is very important. Google Admin provides a range of security features that help organizations protect their information and set up strong controls for users. All of these controls can be found under **Devices > Chrome > Settings > Devices**. Therefore, only a short description of each change and its effects will be added in the following sections.
 
@@ -185,12 +196,24 @@ The option to powerwash devices can negatively affect users and admins through d
 
 This setting is available in **Devices > Chrome Devices**. Under the **Powerwash** section, choose **Do not allow powerwash to be triggered**. This will prevent users from wiping the device except during a TPM firmware update. 
 
-## Shims 
+## Disabling User Enrollment
+Admins may want to prevent user enrollment to better control their devices. This means that systems, such as personal Chromebooks that are not from the organization, don't get set to enterprise policies if users set up with their work account. It also enables easier detection of user unenrollment as users would have to request that their systems get re-enrolled.
+
+By navigating to **Devices > Chrome > Settings > Users & browsers** and then looking for the **Enrollment permissions** tab, admins can set the polcy to **Do not allow users in this organization to enroll new or re-enroll existing devices** to disable user enrollment. 
+
+# Shims 
 Sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the normal shim image to allow users to manipulate the device. 
 
 In order to fix Sh1mmer on Ti50 devices, Google would have to roll all shim keys on the board, however this has still not happened as of Kv4. On older Cr50 systems, it is currently impossible to patch Sh1mmer. Admins can still track Sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
 
-### Sh1mless RMA
+## Sh1mless RMA
 The Shimless RMA menu is a tool embedded into ChromeOS that allows technicians to make limited changes to the device after repairs. However, it can be accessed without authentication and used to fully reset and unenroll the device. 
 
 As the Shimless RMA menu is part of the device's firmware, it is not possible to patch it at this time. Admins should blacklist access to `https://chromeos.google.com/partner/console/` and use the same methods shown with Sh1mmer to detect this exploit in the workspace. 
+
+# Managing Updates
+- ChromeOsReleaseChannelDelegated
+- DeviceExtendedAutoUpdateEnabled
+- DeviceMinimumVersion (and DeviceMinimumVersionAueMessage)
+- Pin version to quickfix (DeviceQuickFixBuildToken?)
+- RebootAfterUpdate
