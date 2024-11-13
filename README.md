@@ -165,6 +165,7 @@ chrome://indexeddb-internals/
 chrome://crostini-installer
 chrome://shimless-rma/
 chrome://chrome-signin
+chrome-extension://*/manifest.json
 html/crosh.html
 chrome-untrusted://*
 chrome://policy
