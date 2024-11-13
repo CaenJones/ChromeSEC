@@ -99,6 +99,7 @@ file://*
 data://*
 javascript://*
 html://*
+devtools://*
 ```
 
 # Securing Sign Ins
