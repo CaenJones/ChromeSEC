@@ -90,8 +90,8 @@ As of May 31st, 2024, Google has launched extension manifest v3, unfortunately s
 
 To do this, admins need to navigate to **Devices > Chrome > Settings > Users & browser settings** and select **Manifest V2 extension availability** and enable it. 
 
-## Disabling Bookmarklets While Allowing Operation 
-While `javascript://` and `data:` bookmarklets can be used to disable extensions, and tamper with the device. Fully disabling them can break normal functionality on websites and programs. Because of this, admins can use a device policy called `JavaScriptBlockedForUrls`. 
+## Disabling Bookmarklets While Allowing Functionality 
+While `javascript://` and `data:` bookmarklets can be used to disable extensions and tamper with the device. Howver, fully disabling them can break normal functionality on websites and programs. Because of this, admins can use a device policy called `JavaScriptBlockedForUrls`. 
 
 This policy is available in **Devices > Chrome > User & Browser Settings > Security > Javascript Settings**. There should be a section where you can add different URLs to prevent javascript from running. It is recommended that you add the following addresses:
 ```
