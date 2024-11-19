@@ -211,9 +211,4 @@ The Shimless RMA menu is a tool embedded into ChromeOS that allows technicians t
 
 As the Shimless RMA menu is part of the device's firmware, it is not possible to patch it at this time. Admins should blacklist access to `https://chromeos.google.com/partner/console/` and use the same methods shown with Sh1mmer to detect this exploit in the workspace. 
 
-# Managing Updates
-- ChromeOsReleaseChannelDelegated
-- DeviceExtendedAutoUpdateEnabled
-- DeviceMinimumVersion (and DeviceMinimumVersionAueMessage)
-- Pin version to quickfix (DeviceQuickFixBuildToken?)
-- RebootAfterUpdate
+
