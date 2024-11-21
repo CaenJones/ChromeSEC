@@ -195,12 +195,7 @@ Admins may want to prevent user enrollment to better control their devices. This
 
 By navigating to **Devices > Chrome > Settings > Users & browsers** and then looking for the **Enrollment permissions** tab, admins can set the polcy to **Do not allow users in this organization to enroll new or re-enroll existing devices** to disable user enrollment. 
 
-# Shims 
+## Sh1mmer 
 Sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the normal shim image to allow users to manipulate the device. 
 
 In order to fix Sh1mmer on Ti50 devices, Google would have to roll all shim keys on the board, however this has still not happened as of Kv4. On older Cr50 systems, it is currently impossible to patch Sh1mmer. Admins can still track Sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
-
-## Sh1mless RMA
-The Shimless RMA menu is a tool embedded into ChromeOS that allows technicians to make limited changes to the device after repairs. However, it can be accessed without authentication and used to fully reset and unenroll the device. 
-
-As the Shimless RMA menu is part of the device's firmware, it is not possible to patch it at this time. Admins should blacklist access to `https://chromeos.google.com/partner/console/` and use the same methods shown with Sh1mmer to detect this exploit in the workspace. 
