@@ -1,7 +1,7 @@
 <img src="https://github.com/CaenJones/ChromeSEC/blob/main/src/ChromeSEC%20Logo.png?raw=true" alt="ChromeSEC Logo.png"/>
 
 > [!IMPORTANT]  
-> As seen on ext-remover!
+> Countdown to Kv5 starts... Now!
 
 > [!TIP]
 > Like this repo? Star and share it with another chromeOS admin! 😄
