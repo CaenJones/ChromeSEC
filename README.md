@@ -209,3 +209,4 @@ As the Shimless RMA menu is part of the device's firmware, it is not possible to
 - DeviceExtendedAutoUpdateEnabled
 - DeviceMinimumVersion
 - RebootAfterUpdate
+- DeviceMinimumVersionAueMessage (prevent outdated users from signing in)
