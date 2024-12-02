@@ -149,6 +149,7 @@ data://*
 chrome://system
 chrome://net-internals
 chrome://serviceworker-internals
+chrome://borealis-installer
 devtools://*
 chrome://settings/performance
 chrome://network#state
