@@ -58,7 +58,7 @@ Admins can go to **Devices > Chrome > Settings > Device** in the admin console a
 # Setting Up Managed Extensions
 Chrome extensions allow for new functionality on Chromebooks such as drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage.
 
-NOTE: It is not safe for administrators to install uBlock Origin on their managed systems because it allows code execution. Instead, they should use the lite version, which offers similar ad-blocking features.
+**NOTE:** It is not safe for administrators to install uBlock Origin on their managed systems because it allows code execution. Instead, they should use the lite version, which offers similar ad-blocking features.
 
 ## Blocking Extension Installations
 Allowing extensions from the Chrome Web Store could pose a security threat and allow for malicious programs to be installed. This poises a bigger threat on Chromebooks as most offices and schools do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list.
