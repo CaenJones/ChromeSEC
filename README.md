@@ -1,4 +1,4 @@
-<img src="https://github.com/CaenJones/ChromeSEC/blob/main/src/ChromeSEC%20Logo.png?raw=true" alt="ChromeSEC Logo.png"/>
+![ChromeSEC Logo](src/ChromeSEC Logo.png)
 
 > [!IMPORTANT]  
 > Countdown to Kv5 starts... Now!
