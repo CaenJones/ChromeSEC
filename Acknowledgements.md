@@ -1,4 +1,3 @@
-# Acknowledgements
 Thanks to the people who debated, disagreed, contributed, and communicated with chromeSEC! :)
 <p align="center">
   <a href="https://github.com/catfoolyou" target="_blank">
