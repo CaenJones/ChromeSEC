@@ -8,6 +8,7 @@ remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme
   - jekyll-gfm-admonitions
+  - jekyll-optional-front-matter
 minima:
   skin: dark
 

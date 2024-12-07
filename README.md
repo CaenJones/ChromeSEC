@@ -3,7 +3,7 @@
 > [!IMPORTANT]  
 > Countdown to Kv5 starts... Now!
 
-> [!TIP]
+> [!TIP]  
 > Like this repo? Star and share it with another chromeOS admin! 😄
 
 # Introduction
@@ -58,7 +58,8 @@ Admins can go to **Devices > Chrome > Settings > Device** in the admin console a
 # Setting Up Managed Extensions
 Chrome extensions allow for new functionality on Chromebooks such as drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage.
 
-**NOTE:** While most guides recommend blocking [uBlock Origin]([https://github.com/gorhill/ublock](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm)) and might recommend [uBlock Origin Lite](https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh), it is possible to restrict uBlock Origin in what it is and is not allowed to do. More details can be found [here](https://github.com/gorhill/ublock/wiki/Deploying-uBlock-Origin). It should also be known that lots of adblockers provide functionality to execute scripts on a page, like [AdGuard](https://adguard.com/).
+> [!NOTE]  
+> While most guides recommend blocking [uBlock Origin]([https://github.com/gorhill/ublock](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm)) and might recommend [uBlock Origin Lite](https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh), it is possible to restrict uBlock Origin in what it is and is not allowed to do. More details can be found [here](https://github.com/gorhill/ublock/wiki/Deploying-uBlock-Origin). It should also be known that lots of adblockers provide functionality to execute scripts on a page, like [AdGuard](https://adguard.com/).
 
 ## Blocking Extension Installations
 Allowing extensions from the Chrome Web Store could pose a security threat and allow for malicious programs to be installed. This poises a bigger threat on Chromebooks as most offices and schools do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list.
