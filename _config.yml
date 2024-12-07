@@ -1,6 +1,30 @@
 # theme: minima
+title: ChromeSEC - Helping administrators keep school devices safe since 2024.
+repository: CaenJones/ChromeSEC
+description: ChromeSEC is a guide to help administrators properly set up and manage their chromebooks without having to search through Google Documentation.
+markdown: GFM
 remote_theme: jekyll/minima
+
 plugins:
   - jekyll-remote-theme
+  - jekyll-gfm-admonitions
 minima:
   skin: dark
+
+exclude: 
+  - "**/*.ts" # Exclude source code files!
+  - "**/*.js"
+  - "*.ts" # Also those in the root directory!
+  - "*.js"
+  - "*.json" # Don't forget about assets!
+  - node_modules/ # And large vendored directories
+  # And these ignore all the artifacts the build produces:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
