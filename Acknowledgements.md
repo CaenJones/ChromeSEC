@@ -29,6 +29,5 @@ Thanks to the people who debated, disagreed, contributed, and communicated with 
   <a href="about:blank" target="_blank">
     <img src="src/GC.png" width="100" height="100" alt="ChromeSEC GC" />
   </a>
-  
   <img src="src/kas.jpg" alt="Photo of Caen Jones and KAS" />
-</p>
+  <p>
