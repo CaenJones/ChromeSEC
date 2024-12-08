@@ -29,5 +29,6 @@ Thanks to the people who debated, disagreed, contributed, and communicated with 
     <img src="https://github.com/CaenJones/ChromeSEC/blob/main/src/GC.png" width="100" height="100" alt="ChromeSEC GC" />
   </a>
   
-  ![alt text](https://github.com/CaenJones/ChromeSEC/blob/main/src/kas.jpg?raw=true)
+  ![image](https://github.com/user-attachments/assets/2c8e648d-7181-48e8-bb03-2ee580888655)
+
 </p>
