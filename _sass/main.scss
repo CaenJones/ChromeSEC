@@ -1,0 +1,22 @@
+html, body {
+  --base-size-8: 0.5rem;
+  --base-size-16: 1rem;
+}
+
+div.admonition {
+  border: 0.2em solid;
+  padding: var(--base-size-8, 8px) var(--base-size-16, 16px);
+  margin-bottom: var(--base-size-16, 16px);
+  border-radius: 10px;
+  p {
+    margin-bottom: 7px;
+    margin-top: 5px;
+  }
+  p.admonition-type {
+    align-items: center;
+    display: flex;
+    svg.octicon {
+      margin-right: var(--base-size-8, 8px);
+    }
+  }
+}

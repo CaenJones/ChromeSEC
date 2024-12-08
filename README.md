@@ -1,9 +1,9 @@
-<img src="https://github.com/CaenJones/ChromeSEC/blob/main/src/ChromeSEC%20Logo.png?raw=true" alt="ChromeSEC Logo.png"/>
+<img src="src/ChromeSEC Logo.png" alt="ChromeSEC Logo">
 
 > [!IMPORTANT]  
 > Countdown to Kv5 starts... Now!
 
-> [!TIP]
+> [!TIP]  
 > Like this repo? Star and share it with another chromeOS admin! 😄
 
 # Introduction
@@ -11,7 +11,7 @@ Hola! Welcome to ChromeSEC. We know that system administrators constantly work w
 
 Because of this, we have created an always-changing, comprehensive guide to enable administrators to properly set up and secure their Chromebooks quickly.
 
-We are an open-source project, so if you would like to make a change or add something feel free to open a pull request! You can also check out our [acknowledgements page](https://github.com/CaenJones/ChromeSEC/blob/main/Acknowledgements.md).
+We are an open-source project, so if you would like to make a change or add something feel free to open a pull request! You can also check out our [acknowledgements page](Acknowledgements.md).
 
 # Securing Kiosk Applications
 Kiosk apps are often used for testing, payment consoles, and helpdesk systems. This makes it extremely important to protect and configure them to prevent tampering or the ability to misuse them as filtering and monitoring extensions are usually inactive. Here is how you can properly setup your Kiosk programs to run in a safe and secure manner. 
@@ -58,7 +58,8 @@ Admins can go to **Devices > Chrome > Settings > Device** in the admin console a
 # Setting Up Managed Extensions
 Chrome extensions allow for new functionality on Chromebooks such as drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage.
 
-**NOTE:** While most guides recommend blocking [uBlock Origin]([https://github.com/gorhill/ublock](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm)) and might recommend [uBlock Origin Lite](https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh), it is possible to restrict uBlock Origin in what it is and is not allowed to do. More details can be found [here](https://github.com/gorhill/ublock/wiki/Deploying-uBlock-Origin). It should also be known that lots of adblockers provide functionality to execute scripts on a page, like [AdGuard](https://adguard.com/).
+> [!NOTE]  
+> While most guides recommend blocking <a href="https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin</a> and might recommend <a href="https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh">uBlock Origin Lite</a>, it is possible to restrict uBlock Origin in what it is and is not allowed to do. More details can be found <a href="https://github.com/gorhill/ublock/wiki/Deploying-uBlock-Origin">here</a>. It should also be known that lots of adblockers provide functionality to execute scripts on a page, like <a href="https://adguard.com/">AdGuard</a>.
 
 ## Blocking Extension Installations
 Allowing extensions from the Chrome Web Store could pose a security threat and allow for malicious programs to be installed. This poises a bigger threat on Chromebooks as most offices and schools do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list.
@@ -201,4 +202,38 @@ By navigating to **Devices > Chrome > Settings > Users & browsers** and then loo
 ## Sh1mmer 
 Sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the normal shim image to allow users to manipulate the device. 
 
-In order to fix Sh1mmer on Ti50 devices, Google would have to roll all shim keys on the board, however this has still not happened as of Kv4. On older Cr50 systems, it is currently impossible to patch Sh1mmer. Admins can still track Sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
+In order to fix Sh1mmer on Ti50 devices Google has had to roll all shim keys on the boards, however this has happened to some boards like `nissa` on around v124. On older Cr50 systems, it is currently impossible to patch Sh1mmer. Admins can still track Sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
+
+
+
+
+
+# Extra information about licensing (if you thought the website looked cool)
+All the code for the website if made by Kanav Gupta, or [s0urce-c0de](https://github.com/s0urce-c0de). Parts of this code is from stackoverflow or docs, but all the code (for rendering the website) is under the UNLICENSE.
+```
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>
+```
+This portion of the code includes the `_includes`, `_plugins`, `_sass`, `assets`, `Gemfile`, and `_config.yml` files/directories. More files may be added later, but it shall be all the files related exclusively to the Jekyll side of this repository and nothing else. This README and all images and other files not listed here are under the MIT License of Caen Kole Jones.
