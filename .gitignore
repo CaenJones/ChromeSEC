@@ -1,1 +1,3 @@
-_site # local jekyll testing
+_site
+.sass-cache
+.jekyll-cache

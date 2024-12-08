@@ -31,12 +31,21 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+        id: build
+        run: >
+          bundle install &&
+          jekyll build
+            --source ./
+            --destination ./_site
+            --config ./_config.yml
+            --no-watch
+            --verbose
+            --plugins ./_plugins
+            --trace
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
 
   # Deployment job
   deploy:
