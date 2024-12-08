@@ -1,4 +1,6 @@
-# Acknowledgementss
+---
+title: "Acknowledgements"
+---
 
 Thanks to the people who debated, disagreed, contributed, and communicated with chromeSEC! :)
 <p align="center">
@@ -27,8 +29,8 @@ Thanks to the people who debated, disagreed, contributed, and communicated with 
     <img src="https://github.com/theamazing0.png" width="100" height="100" alt="TheAmazing0" />
   </a>
   <a href="about:blank" target="_blank">
-    <img src="src/GC.png" width="100" height="100" alt="ChromeSEC GC" />
+    <img src="../src/GC.png" width="100" height="100" alt="ChromeSEC GC" />
   </a>
   
-  <img src="src/kas.jpg" alt="Photo of Caen Jones and KAS" />
+  <img src="../src/kas.jpg" alt="Photo of Caen Jones and KAS" />
 </p>
