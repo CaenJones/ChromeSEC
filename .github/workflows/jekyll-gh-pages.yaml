@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: bundle install
       - name: Jekyll Build
-        run: jekyll build --source ./ --destination ./_site --config ./_config.yml --no-watch --verbose --plugins ./_plugins --trace
+        run: bundler exec jekyll build --source ./ --destination ./_site --config ./_config.yml --no-watch --verbose --plugins ./_plugins --trace
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
