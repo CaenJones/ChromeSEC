@@ -39,7 +39,7 @@ jobs:
       - name: Jekyll Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bundler exec jekyll build --source ./ --destination ./_site --config ./_config.yml --no-watch --verbose --plugins ./_plugins --trace --baseurl ./
+        run: bundler exec jekyll build --source ./ --destination ./_site --config ./_config.yml --no-watch --verbose --plugins ./_plugins --trace --baseurl `gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.html_url' | sed -E 's/https?:\/\/[^\/]+//'`
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

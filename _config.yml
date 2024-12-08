@@ -3,7 +3,6 @@ title: ChromeSEC
 repository: CaenJones/ChromeSEC
 description: ChromeSEC is a guide to help administrators properly set up and manage their chromebooks without having to search through Google Documentation.
 remote_theme: jekyll/minima
-base_url: https://friendly-space-adventure-r9x6pqg57vx2xp9p-4000.app.github.dev/
 
 minima:
   skin: dark

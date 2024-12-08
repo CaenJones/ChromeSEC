@@ -59,7 +59,7 @@ Admins can go to **Devices > Chrome > Settings > Device** in the admin console a
 Chrome extensions allow for new functionality on Chromebooks such as drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage.
 
 > [!NOTE]  
-> While most guides recommend blocking [uBlock Origin]([https://github.com/gorhill/ublock](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm)) and might recommend [uBlock Origin Lite](https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh), it is possible to restrict uBlock Origin in what it is and is not allowed to do. More details can be found [here](https://github.com/gorhill/ublock/wiki/Deploying-uBlock-Origin). It should also be known that lots of adblockers provide functionality to execute scripts on a page, like [AdGuard](https://adguard.com/).
+> While most guides recommend blocking <a href="https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin</a> and might recommend <a href="https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh">uBlock Origin Lite</a>, it is possible to restrict uBlock Origin in what it is and is not allowed to do. More details can be found <a href="https://github.com/gorhill/ublock/wiki/Deploying-uBlock-Origin">here</a>. It should also be known that lots of adblockers provide functionality to execute scripts on a page, like <a href="https://adguard.com/">AdGuard</a>.
 
 ## Blocking Extension Installations
 Allowing extensions from the Chrome Web Store could pose a security threat and allow for malicious programs to be installed. This poises a bigger threat on Chromebooks as most offices and schools do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list.
@@ -202,7 +202,7 @@ By navigating to **Devices > Chrome > Settings > Users & browsers** and then loo
 ## Sh1mmer 
 Sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the normal shim image to allow users to manipulate the device. 
 
-In order to fix Sh1mmer on Ti50 devices, Google would have to roll all shim keys on the board, however this has still not happened as of Kv4. On older Cr50 systems, it is currently impossible to patch Sh1mmer. Admins can still track Sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
+In order to fix Sh1mmer on Ti50 devices Google has had to roll all shim keys on the boards, however this has happened to some boards like `nissa` on around v124. On older Cr50 systems, it is currently impossible to patch Sh1mmer. Admins can still track Sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
 
 
 
