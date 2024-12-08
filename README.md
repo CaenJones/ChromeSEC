@@ -1,4 +1,4 @@
-![ChromeSEC Logo](src/ChromeSEC Logo.png)
+<img src="src/ChromeSEC Logo.png" alt="ChromeSEC Logo">
 
 > [!IMPORTANT]  
 > Countdown to Kv5 starts... Now!
