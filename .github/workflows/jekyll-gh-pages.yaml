@@ -37,7 +37,9 @@ jobs:
       - name: Install dependencies
         run: bundle install
       - name: Jekyll Build
-        run: bundler exec jekyll build --source ./ --destination ./_site --config ./_config.yml --no-watch --verbose --plugins ./_plugins --trace
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bundler exec jekyll build --source ./ --destination ./_site --config ./_config.yml --no-watch --verbose --plugins ./_plugins --trace --baseurl $(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.html_url')
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
