@@ -30,9 +30,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Setup ruby
-      uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.4' # Not needed with a .ruby-version file
+          ruby-version: '3.3' # Not needed with a .ruby-version file
+          bundler-cache: true
       - name: Install dependencies
         run: bundle install
       - name: Jekyll Build
