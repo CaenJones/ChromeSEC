@@ -14,7 +14,7 @@ ADMONITION_TO_DATA = {
     color: 0x8957e5
   },
   warning: {
-    icon: "warning",
+    icon: "alert",
     color: 0x9e6a03
   },
   caution: {

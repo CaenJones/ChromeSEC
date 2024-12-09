@@ -199,10 +199,13 @@ Admins may want to prevent user enrollment to better control their devices. This
 
 By navigating to **Devices > Chrome > Settings > Users & browsers** and then looking for the **Enrollment permissions** tab, admins can set the polcy to **Do not allow users in this organization to enroll new or re-enroll existing devices** to disable user enrollment. 
 
-## Sh1mmer 
-Sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the normal shim image to allow users to manipulate the device. 
+> [!WARNING]
+> According to <a href="https://github.com/kkilobyte">kilo</a> (who is somewhat reliable), student can just go into VT2 and type `vpd -i RW_VPD -s check_enrollment=1`. There is also a new payload for RigTools called `Riienrollment` which is included in RigTools v2 which should also allow student to reenroll.
 
-In order to fix Sh1mmer on Ti50 devices Google has had to roll all shim keys on the boards, however this has happened to some boards like `nissa` on around v124. On older Cr50 systems, it is currently impossible to patch Sh1mmer. Admins can still track Sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
+## sh1mmer 
+sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the normal shim image to allow users to manipulate the device. 
+
+In order to fix sh1mmer on TI50 devices Google has had to roll all shim keys on the boards, however this has happened to some boards like `nissa` on around v124. On older CR50 systems, it is currently impossible to patch sh1mmer. Admins can still track sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
 
 # Website Licensing
 All the code for the website if made by Kanav Gupta, or [s0urce-c0de](https://github.com/s0urce-c0de). Parts of this code is from stackoverflow or docs, but all the code (for rendering the website) is under the UNLICENSE.
