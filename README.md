@@ -200,7 +200,7 @@ Admins may want to prevent user enrollment to better control their devices. This
 By navigating to **Devices > Chrome > Settings > Users & browsers** and then looking for the **Enrollment permissions** tab, admins can set the polcy to **Do not allow users in this organization to enroll new or re-enroll existing devices** to disable user enrollment. 
 
 > [!WARNING]
-> According to <a href="https://github.com/kkilobyte">kilo</a> (who is somewhat reliable), student can just go into VT2 and type `vpd -i RW_VPD -s check_enrollment=1`. There is also a new payload for RigTools called `Riienrollment` which is included in RigTools v2 which should also allow student to reenroll.
+> It is currently possible on unenrolled Chromebooks with developer mode enabled to run `vpd—i RW_VPD -s check_enrollment=1` in VT2 to bypass policy and fully re-enroll. The exploit kit Rigtools v2 also has a new functionality called `Riienrollment,` allowing easy re-enrollment. [(kkilobyte as source)](https://github.com/kkilobyte)
 
 ## sh1mmer 
 sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the normal shim image to allow users to manipulate the device. 
