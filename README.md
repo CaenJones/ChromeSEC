@@ -126,7 +126,9 @@ To make sure that all Chrome policies are always enforced for every user, admins
 Admins can navigate to **Devices > Chrome > Settings > Users & browsers** and scroll down to **Multiple Sign-In Access**. There should be an option to **Block Multiple Sign-in Access to Users in this Organization** that should then be enabled.
 
 ## Enabling Ephemeral Mode
-Ephemeral Mode a feature that clears all local data and deletes the user profile on each restart. This makes some exploits (like RigTools) non-persistent and can prevent device tampering. However, this also greatly reduces storage capacity so it is recommended to use Google Drive as the default download directory (`${google_drive}/`). Take a look at [google documentation](https://support.google.com/chrome/a/answer/3538894) to decide how you want to implement it.
+Ephemeral Mode a feature that clears all local data and deletes the user profile on each restart. This makes some exploits (like RigTools) non-persistent and can prevent device tampering. However, this also greatly reduces storage capacity so it is recommended to use Google Drive as the default download directory (`${google_drive}/`).
+
+To implement this, you can navigate to **Devices > Chrome > Settings > Users and browsers** and set the **Force ephemeral mode policy** to **Erase all local user data**.
 
 # Disabling System Features
 ChromeOS gives users several features made to improve the general experience. However, these features also create gaps in terms of user security and device policies. Because of this, administrators may wish to disable certain features in order to enhance pre-existing controls.
