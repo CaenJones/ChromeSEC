@@ -3,6 +3,16 @@ html, body {
   --base-size-16: 1rem;
 }
 
+p > a > img.icon {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+p a:has(> img.icon) {
+  border: 5px;
+}
+
 div.admonition {
   border: 0.2em solid;
   padding: var(--base-size-8, 8px) var(--base-size-16, 16px);
