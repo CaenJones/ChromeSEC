@@ -4,7 +4,7 @@
 > Countdown to Kv5 starts... Now!
 
 > [!TIP]  
-> Like this repo? Star and share it with another chromeOS admin! 😄
+> If you found this guide useful, please share it with another google admin 😄
 
 # Introduction
 Hola! Welcome to ChromeSEC. We know that system administrators constantly work within their organization on numerous projects and often do not have the time to hunt for forum posts, decipher Google documentation, or pay for support.
