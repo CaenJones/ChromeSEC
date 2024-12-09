@@ -59,7 +59,7 @@ Admins can go to **Devices > Chrome > Settings > Device** in the admin console a
 Chrome extensions allow for new functionality on Chromebooks such as drive integrations, testing tools, and web filtering. However, unauthorized extensions in the webstore and from 3rd party sources can also pose security risks, privacy concerns, and can cause issues in device policy. Because of this, administrators should create restrictions on extension access and usage.
 
 > [!NOTE]  
-> While most guides recommend blocking <a href="https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin</a> and might recommend <a href="https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh">uBlock Origin Lite</a>, it is possible to restrict uBlock Origin in what it is and is not allowed to do. More details can be found <a href="https://github.com/gorhill/ublock/wiki/Deploying-uBlock-Origin">here</a>. It should also be known that lots of adblockers provide functionality to execute scripts on a page, like <a href="https://adguard.com/">AdGuard</a>.
+> While most guides recommend blocking [uBlock Origin](https://chromewebstore.google.com/detail/cjpalhdlnbpafiamejdnhcphjbkeiagm) and might recommend [uBlock Origin Lite](https://chromewebstore.google.com/detail/ddkjiahejlhfcafbddmgiahcphecmpfh), it is possible to restrict uBlock Origin in what it is and is not allowed to do. More details can be found [here](https://github.com/gorhill/ublock/wiki/Deploying-uBlock-Origin). It should also be known that lots of adblockers provide functionality to execute scripts on a page, like [AdGuard](https://adguard.com/).
 
 ## Blocking Extension Installations
 Allowing extensions from the Chrome Web Store could pose a security threat and allow for malicious programs to be installed. This poises a bigger threat on Chromebooks as most offices and schools do not have antivirus for Chrome devices. Because of this, it is generally best to lock extension access to a pre-approved list.
@@ -200,9 +200,9 @@ Admins may want to prevent user enrollment to better control their devices. This
 By navigating to **Devices > Chrome > Settings > Users & browsers** and then looking for the **Enrollment permissions** tab, admins can set the polcy to **Do not allow users in this organization to enroll new or re-enroll existing devices** to disable user enrollment. 
 
 > [!WARNING]
-> <b>THIS HAS ONLY BEEN PARTIALLY TESTED:</b> It may be possible on unenrolled Chromebooks with developer mode enabled to run <code>vpd—i RW_VPD -s check_enrollment=1</code> in VT2 to bypass policy and re-enroll. An exploit kit named Rigtoolsv2 also claims to have functionality called <code>Riienrollment</code>, which can also bypass enrollment policy set in the admin console.
-<br>
-<br>
+> **THIS HAS ONLY BEEN PARTIALLY TESTED:** It may be possible on unenrolled Chromebooks with developer mode enabled to run `vpd—i RW_VPD -s check_enrollment=1` in VT2 to bypass policy and re-enroll. An exploit kit named Rigtoolsv2 also claims to have functionality called `Riienrollment`, which can also bypass enrollment policy set in the admin console.
+>
+>
 > <a href="https://github.com/kkilobyte">kkilobyte as the source</a>
 
 ## sh1mmer 

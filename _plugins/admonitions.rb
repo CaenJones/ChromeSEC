@@ -25,9 +25,9 @@ ADMONITION_TO_DATA = {
 
 ADMONITION = /(> \[\!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\] *((?:\n> .*)+))/
 
-TEMPLATE = '''<div class="admonition" style="border-color: #%06x;">
-  <p class="admonition-type" style="fill: #%06x;">%s %s</p>
-  <p class="admonition-message">%s</p>
+TEMPLATE = '''<div class="admonition" style="border-color: #%06x;" markdown="1">
+  <p class="admonition-type" style="fill: #%06x;" markdown="1">%s %s</p>
+  <p class="admonition-message" markdown="1">%s</p>
 </div>'''
 
 Jekyll::Hooks.register :pages, :pre_render do |page|
