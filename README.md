@@ -204,11 +204,7 @@ Sh1mmer is an exploit that takes advantage of how factory shims are verified for
 
 In order to fix Sh1mmer on Ti50 devices Google has had to roll all shim keys on the boards, however this has happened to some boards like `nissa` on around v124. On older Cr50 systems, it is currently impossible to patch Sh1mmer. Admins can still track Sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
 
-
-
-
-
-# Extra information about licensing (if you thought the website looked cool)
+# Website Licensing
 All the code for the website if made by Kanav Gupta, or [s0urce-c0de](https://github.com/s0urce-c0de). Parts of this code is from stackoverflow or docs, but all the code (for rendering the website) is under the UNLICENSE.
 ```
 This is free and unencumbered software released into the public domain.
@@ -236,4 +232,4 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
 ```
-This portion of the code includes the `_includes`, `_plugins`, `_sass`, `assets`, `Gemfile`, and `_config.yml` files/directories. More files may be added later, but it shall be all the files related exclusively to the Jekyll side of this repository and nothing else. This README and all images and other files not listed here are under the MIT License of Caen Kole Jones.
+As of right now, this includes the `_includes`, `_plugins`, `_sass`, `assets`, `Gemfile`, and `_config.yml` files/directories. The license is related exclusively to the Jekyll side of this repository and nothing else. This README and all images and other files not listed here are under the MIT License of Caen Kole Jones.
