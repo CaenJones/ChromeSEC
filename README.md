@@ -126,9 +126,7 @@ To make sure that all Chrome policies are always enforced for every user, admins
 Admins can navigate to **Devices > Chrome > Settings > Users & browsers** and scroll down to **Multiple Sign-In Access**. There should be an option to **Block Multiple Sign-in Access to Users in this Organization** that should then be enabled.
 
 ## Enabling Ephemeral Mode
-Ephemeral Mode a feature that clears all local data and removes the user profile on each restart. This makes it impossible to use flags, since the profile gets wiped each time you restart. It also makes exploits like RigTools non-persistent, so while students can downgrade as KV5 is not out yet and set up RigTools on an old version. It also reduces storage capacity so students will have a harder time setting up development featurs like Crostini (Linux) and Borealis (Steam). Refer to the [google documentation](https://support.google.com/chrome/a/answer/3538894).
-> [!WARNING]
-> This mode makes it so students have less storage (around 2GB) and their files dont save. I would recommend setting the Download Directory to `${google_drive}/` to preserve all their files in google drive.
+Ephemeral Mode a feature that clears all local data and deletes the user profile on each restart. This makes some exploits (like RigTools) non-persistent. However, it also reduces storage capacity so it is recommended to use Google Drive as the default download directory (`${google_drive}/`). Refer to the [google documentation](https://support.google.com/chrome/a/answer/3538894).
 
 # Disabling System Features
 ChromeOS gives users several features made to improve the general experience. However, these features also create gaps in terms of user security and device policies. Because of this, administrators may wish to disable certain features in order to enhance pre-existing controls.
