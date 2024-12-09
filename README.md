@@ -200,7 +200,7 @@ Admins may want to prevent user enrollment to better control their devices. This
 By navigating to **Devices > Chrome > Settings > Users & browsers** and then looking for the **Enrollment permissions** tab, admins can set the polcy to **Do not allow users in this organization to enroll new or re-enroll existing devices** to disable user enrollment. 
 
 > [!WARNING]
-> **THIS HAS ONLY BEEN PARTIALLY TESTED:** It may be possible on unenrolled Chromebooks with developer mode enabled to run `vpd—i RW_VPD -s check_enrollment=1` in VT2 to bypass policy and re-enroll. An exploit kit named Rigtoolsv2 also claims to have functionality called `Riienrollment,` which can also bypass enrollment policy set in the admin console. [(kkilobyte as source)](https://github.com/kkilobyte)
+> <b>THIS HAS ONLY BEEN PARTIALLY TESTED:</b> It may be possible on unenrolled Chromebooks with developer mode enabled to run <code>vpd—i RW_VPD -s check_enrollment=1</code> in VT2 to bypass policy and re-enroll. An exploit kit named Rigtoolsv2 also claims to have functionality called <code>Riienrollment</code>, which can also bypass enrollment policy set in the admin console. <a href="https://github.com/kkilobyte">kkilobyte as source</a>
 
 ## sh1mmer 
 sh1mmer is an exploit that takes advantage of how factory shims are verified for the device. By only checking the kernel signature, it was possible to modify the normal shim image to allow users to manipulate the device. 
