@@ -20,9 +20,6 @@ Thanks to the people who debated, disagreed, contributed, and communicated with 
   <a href="https://github.com/s0urce-c0de" target="_blank" style="margin-right: 10px;">
     <img src="https://github.com/s0urce-c0de.png" width="100" height="100" alt="s0urce-c0de" style="border-radius: 50%; border: 2px solid #ffffff;"/>
   </a>
-  <a href="https://github.com/nightfallenxyz" target="_blank" style="margin-right: 10px;">
-    <img src="https://github.com/nightfallenxyz.png" width="100" height="100" alt="Ash" style="border-radius: 50%; border: 2px solid #ffffff;"/>
-  </a>
   <a href="https://github.com/theamazing0" target="_blank" style="margin-right: 10px;">
     <img src="https://github.com/theamazing0.png" width="100" height="100" alt="TheAmazing0" style="border-radius: 50%; border: 2px solid #ffffff;"/>
   </a>
