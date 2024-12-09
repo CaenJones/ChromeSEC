@@ -201,7 +201,8 @@ By navigating to **Devices > Chrome > Settings > Users & browsers** and then loo
 
 > [!WARNING]
 > <b>THIS HAS ONLY BEEN PARTIALLY TESTED:</b> It may be possible on unenrolled Chromebooks with developer mode enabled to run <code>vpd—i RW_VPD -s check_enrollment=1</code> in VT2 to bypass policy and re-enroll. An exploit kit named Rigtoolsv2 also claims to have functionality called <code>Riienrollment</code>, which can also bypass enrollment policy set in the admin console.
-> 
+<br>
+<br>
 > <a href="https://github.com/kkilobyte">kkilobyte as the source</a>
 
 ## sh1mmer 
