@@ -25,7 +25,7 @@ ADMONITION_TO_DATA = {
 
 ADMONITION = /(> \[\!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\] *((?:\n> .*)+))/
 
-TEMPLATE = '''<div class="admonition" style="border-color: #%06x;" markdown="1">
+ADMONITION_TEMPLATE = '''<div class="admonition" style="border-color: #%06x;" markdown="1">
   <p class="admonition-type" style="fill: #%06x;" markdown="1">%s %s</p>
   <p class="admonition-message" markdown="1">%s</p>
 </div>'''
@@ -40,7 +40,7 @@ Jekyll::Hooks.register :pages, :pre_render do |page|
       for full, admonition, admonition_content in matches do
         admonition_content.sub! '> ', ''
         admonition_content.gsub! '\n> ', '\n'
-        content.sub! full, TEMPLATE % [
+        content.sub! full, ADMONITION_TEMPLATE % [
           ADMONITION_TO_DATA[admonition.downcase.to_sym][:color],
           ADMONITION_TO_DATA[admonition.downcase.to_sym][:color],
           Octicons::Octicon.new(ADMONITION_TO_DATA[admonition.downcase.to_sym][:icon]).to_svg,
@@ -50,8 +50,8 @@ Jekyll::Hooks.register :pages, :pre_render do |page|
       end
     else
       Jekyll.logger.debug "No admonitions found."
-    page.content = content
     end
+    page.content = content
   else
     Jekyll.logger.debug "Not processing #{page.name}"
   end
