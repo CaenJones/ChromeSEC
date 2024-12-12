@@ -37,7 +37,9 @@ jobs:
       - name: Install dependencies
         run: bundle install
       - name: Generate Favicons
-        run: assets/favicon/convert.sh
+        run: |
+          chmod +x assets/favicon/convert.sh
+          assets/favicon/convert.sh
       - name: Jekyll Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
