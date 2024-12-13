@@ -212,6 +212,12 @@ sh1mmer is an exploit that takes advantage of how factory shims are verified for
 
 In order to fix sh1mmer on TI50 devices Google has had to roll all shim keys on the boards, however this has happened to some boards like `nissa` on around v124. On older CR50 systems, it is currently impossible to patch sh1mmer. Admins can still track sh1mmer usage in their workspace by checking for old device policy sync dates in the admin console and removing enrollment permissions for general users.
 
+# Managing Updates
+- DeviceExtendedAutoUpdateEnabled
+- DeviceMinimumVersion
+- RebootAfterUpdate
+- DeviceMinimumVersionAueMessage (prevent outdated users from signing in)
+
 # Website Licensing
 All the code for the website if made by Kanav Gupta, or [s0urce-c0de](https://github.com/s0urce-c0de). Parts of this code is from stackoverflow or docs, but all the code (for rendering the website) is under the UNLICENSE.
 ```
