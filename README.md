@@ -1,7 +1,7 @@
 <img src="src/ChromeSEC Logo.png" alt="ChromeSEC Logo">
 
 > [!IMPORTANT]  
-> Countdown to Kv5 starts... Now!
+> Hello sysadmins (especially those in FCPS) around the world! Happy holidays! 🎄
 
 > [!TIP]  
 > If you found this guide useful, please share it with another google admin 😄
